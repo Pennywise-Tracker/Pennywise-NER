@@ -52,6 +52,6 @@ For annotating text data, use the [NER Annotator Tool](https://tecoholic.github.
 
 - **Run the `main.py`**:
     ```bash
-    main.py
+    python main.py
     ```
 This script allows you to input custom text and view recognized entities. Ensure you have your trained model saved in the output/ directory.
