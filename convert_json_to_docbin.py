@@ -1,6 +1,6 @@
 import json
 import spacy
-from spacy.tokens import DocBin, Doc
+from spacy.tokens import DocBin
 from tqdm import tqdm
 
 nlp = spacy.load("en_core_web_sm")
@@ -23,8 +23,5 @@ for text, annot in tqdm(annotations):
             ents.append(span)
     doc.ents = ents
     db.add(doc)
-
-import os
-os.chdir(r'D:\Projects\spacy-test')
 
 db.to_disk("./train.spacy")
