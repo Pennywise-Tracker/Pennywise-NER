@@ -3,7 +3,7 @@ import spacy
 from spacy.tokens import DocBin
 from tqdm import tqdm
 
-nlp = spacy.load("en_core_web_sm")
+nlp = spacy.load("en_core_web_trf")
 
 with open('annotations.json', 'r') as f:
     data = json.load(f)
