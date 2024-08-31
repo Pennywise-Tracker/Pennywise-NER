@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI
 from pydantic import BaseModel
 import spacy
 
@@ -13,15 +13,55 @@ class TextRequest(BaseModel):
 @app.post("/predict")
 async def predict(request: TextRequest):
     doc = nlp(request.text)
-    entities = [{"text": ent.text, "label": ent.label_} for ent in doc.ents]
-    return {"user_id":request.user_id ,"entities": entities}
+
+    # Dictionary to store aggregated results by category
+    aggregated_results = {}
+
+    # First pass: Collect all amounts and descriptions
+    for ent in doc.ents:
+        if ent.label_ == "EXPENSE":
+            # Store the amounts in a list
+            if ent.label_ not in aggregated_results:
+                aggregated_results[ent.label_] = {
+                    "amounts": [],
+                    "descriptions": []
+                }
+            aggregated_results[ent.label_]["amounts"].append(ent.text)
+        else:
+            # Store descriptions for non-EXPENSE entities
+            if ent.label_ not in aggregated_results:
+                aggregated_results[ent.label_] = {
+                    "amounts": [],
+                    "descriptions": []
+                }
+            aggregated_results[ent.label_]["descriptions"].append(ent.text)
+
+    # Prepare final results
+    results = []
+    for category, data in aggregated_results.items():
+        if category == "EXPENSE":
+            # Only process if there are amounts collected
+            continue
+        
+        result = {
+            "user_id": request.user_id,
+            "category": category,
+            "description": ", ".join(data["descriptions"]),
+            "amount": ", ".join(aggregated_results.get("EXPENSE", {}).get("amounts", []))
+        }
+        results.append(result)
+
+    return results
+
+
+
 
 # RUN COMMAND
-#uvicorn main:app --reload
+# uvicorn main:app --reload
 
 #Output
 # {
-#     "user_id" : ""
+#     "user_id" : "1"
 #     "category" : "",
 #     "description": "",
 #     "amount" : ""
