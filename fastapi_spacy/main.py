@@ -14,56 +14,80 @@ class TextRequest(BaseModel):
 async def predict(request: TextRequest):
     doc = nlp(request.text)
 
-    # Dictionary to store aggregated results by category
-    aggregated_results = {}
+    category_descriptions = {}
+    category_amounts = {}
+    category_order = []
+    current_category = None
 
-    # First pass: Collect all amounts and descriptions
     for ent in doc.ents:
         if ent.label_ == "EXPENSE":
-            # Store the amounts in a list
-            if ent.label_ not in aggregated_results:
-                aggregated_results[ent.label_] = {
-                    "amounts": [],
-                    "descriptions": []
-                }
-            aggregated_results[ent.label_]["amounts"].append(ent.text)
+            if current_category:
+                if current_category not in category_amounts:
+                    category_amounts[current_category] = 0.0
+                try:
+                    amount = float(ent.text.replace(',', '').replace('Rs', '').strip())
+                    category_amounts[current_category] += amount
+                except ValueError:
+                    pass
+            else:
+                if "EXPENSE" not in category_amounts:
+                    category_amounts["EXPENSE"] = 0.0
+                try:
+                    amount = float(ent.text.replace(',', '').replace('Rs', '').strip())
+                    category_amounts["EXPENSE"] += amount
+                except ValueError:
+                    pass
         else:
-            # Store descriptions for non-EXPENSE entities
-            if ent.label_ not in aggregated_results:
-                aggregated_results[ent.label_] = {
-                    "amounts": [],
-                    "descriptions": []
-                }
-            aggregated_results[ent.label_]["descriptions"].append(ent.text)
+            if ent.label_ not in category_descriptions:
+                category_descriptions[ent.label_] = []
+                category_amounts[ent.label_] = 0.0
+                category_order.append(ent.label_)
+            category_descriptions[ent.label_].append(ent.text)
+            current_category = ent.label_
 
-    # Prepare final results
     results = []
-    for category, data in aggregated_results.items():
-        if category == "EXPENSE":
-            # Only process if there are amounts collected
-            continue
-        
+    for category in category_order:
         result = {
-            "user_id": request.user_id,
             "category": category,
-            "description": ", ".join(data["descriptions"]),
-            "amount": ", ".join(aggregated_results.get("EXPENSE", {}).get("amounts", []))
+            "description": ", ".join(category_descriptions[category]),
+            "amount": category_amounts[category]
         }
         results.append(result)
 
-    return results
+    if "EXPENSE" in category_amounts and category_amounts["EXPENSE"] > 0:
+        result = {
+            "category": "",
+            "description": "",
+            "amount": category_amounts["EXPENSE"]
+        }
+        results.append(result)
 
+    if not results or (len(results) == 1 and "amount" in results[0] and results[0]["amount"] == 0.0):
+        response = {
+            "user_id": request.user_id,
+            "text": "Oops, it looks like you forgot to mention an expense!"
+        }
+    else:
+        all_results_valid = True
+        for res in results:
+            if not res["category"] or not res["description"]:
+                all_results_valid = False
+                break
+        
+        if not all_results_valid:
+            response = {
+                "user_id": request.user_id,
+                "text": "Sorry, I didn't quite get that."
+            }
+        else:
+            response = {
+                "user_id": request.user_id,
+                "expenses": results
+            }
+
+    return response
 
 
 
 # RUN COMMAND
 # uvicorn main:app --reload
-
-#Output
-# {
-#     "user_id" : "1"
-#     "category" : "",
-#     "description": "",
-#     "amount" : ""
-# }
-
