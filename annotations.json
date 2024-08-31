@@ -1,6 +1,6 @@
 {"classes": ["SUBSCRIPTION_TYPE","SUBSCRIPTION_EXPENSE", "FOOD_EXPENSE", "FOOD_ITEM", "TRAVEL_MODE", "TRAVEL_EXPENSE", "TRAVEL_DESTINATION", "CLOTHING_EXPENSE", "CLOTHING_TYPE"],
     "annotations": [
-      ["Renewed my Netflix subscription for Rs 2000 this month\r", {"entities": [[11,18,"SUBSCRIPTION_TYPE"]]}],
+      ["Renewed my Netflix subscription for Rs 2000 this month\r", {"entities": [[11, 18, "SUBSCRIPTION_TYPE"], [38, 42, "EXPENSE"]]}],
       ["Renewed my Amazon Prime membership for Rs 1500 this year\r",{"entities": [[11,23,"SUBSCRIPTION_TYPE"], [42,46,"SUBSCRIPTION_EXPENSE"]]}],
       ["Subscribed to HBO Max for Rs 500 per month\r",{"entities": [[14,21,"SUBSCRIPTION_TYPE"],[29,32,"SUBSCRIPTION_EXPENSE"]]}],      
       ["Renewed my Spotify Premium subscription for Rs 250 this month\r",{"entities": [[11,26,"SUBSCRIPTION_TYPE"],[47,50,"SUBSCRIPTION_EXPENSE"]]}],      
