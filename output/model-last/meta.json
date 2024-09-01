@@ -21,8 +21,12 @@
 
     ],
     "ner":[
-      "SUBSCRIPTION_EXPENSE",
-      "SUBSCRIPTION_TYPE"
+      "CLOTHING_TYPE",
+      "EXPENSE",
+      "FOOD_ITEM",
+      "SUBSCRIPTION_TYPE",
+      "TRAVEL_DESTINATION",
+      "TRAVEL_MODE"
     ]
   },
   "pipeline":[
@@ -37,22 +41,42 @@
 
   ],
   "performance":{
-    "ents_f":1.0,
-    "ents_p":1.0,
+    "ents_f":0.9991474851,
+    "ents_p":0.9982964225,
     "ents_r":1.0,
     "ents_per_type":{
       "SUBSCRIPTION_TYPE":{
+        "p":0.9914529915,
+        "r":1.0,
+        "f":0.9957081545
+      },
+      "EXPENSE":{
         "p":1.0,
         "r":1.0,
         "f":1.0
       },
-      "SUBSCRIPTION_EXPENSE":{
+      "FOOD_ITEM":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
+      },
+      "TRAVEL_MODE":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
+      },
+      "TRAVEL_DESTINATION":{
+        "p":1.0,
+        "r":1.0,
+        "f":1.0
+      },
+      "CLOTHING_TYPE":{
         "p":1.0,
         "r":1.0,
         "f":1.0
       }
     },
-    "tok2vec_loss":0.0000000006,
-    "ner_loss":0.0000000021
+    "tok2vec_loss":79.3107162494,
+    "ner_loss":108.1610800395
   }
 }
