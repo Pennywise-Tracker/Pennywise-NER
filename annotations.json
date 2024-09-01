@@ -1,4 +1,4 @@
-{"classes": ["SUBSCRIPTION_TYPE","EXPENSE", "FOOD_ITEM", "TRAVEL_MODE", "TRAVEL_DESTINATION", "CLOTHING_TYPE"],
+{"classes": ["SUBSCRIPTION_TYPE","EXPENSE", "FOOD_ITEM", "TRAVEL_MODE", "TRAVEL_DESTINATION", "CLOTHING_TYPE, BILL_TYPE"],
     "annotations": [
       ["Renewed my Netflix subscription for Rs 2000 this month\r", {"entities": [[11, 18, "SUBSCRIPTION_TYPE"], [38, 42, "EXPENSE"]]}],
       ["Renewed my Amazon Prime membership for Rs 1500 this year\r",{"entities": [[11,23,"SUBSCRIPTION_TYPE"], [42,46,"EXPENSE"]]}],
@@ -8,988 +8,118 @@
       ["Renewed my Disney Plus subscription for Rs 300 this month\r",{"entities": [[11,12,"SUBSCRIPTION_TYPE" ],[43,46,"EXPENSE"]]}],
       ["Subscribed to YouTube Premium for Rs 400 per month\r",{ "entities": [[14,29,"SUBSCRIPTION_TYPE"],[37,40,"EXPENSE"]]}],
       ["Renewed my Audible membership for Rs 1000 this year\r", {"entities": [[11,18,"SUBSCRIPTION_TYPE"],[37,41,"EXPENSE"]]}],
-      [
-        "Renewed my Netflix subscription for Rs 2000 this month.\r",
-        {
-          "entities": [
-            [11, 18, "SUBSCRIPTION_TYPE"],
-            [39, 43, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Renewed my Amazon Prime membership for Rs 1500 this year.\r",
-        {
-          "entities": [
-            [11, 23, "SUBSCRIPTION_TYPE"],
-            [42, 46, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Subscribed to HBO Max for Rs 500 per month.\r",
-        {
-          "entities": [
-            [14, 21, "SUBSCRIPTION_TYPE"],
-            [29, 32, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Renewed my Spotify Premium subscription for Rs 250 this month.\r",
-        {
-          "entities": [
-            [11, 26, "SUBSCRIPTION_TYPE"],
-            [47, 50, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Subscribed to Apple Music for Rs 200 per month.\r",
-        {
-          "entities": [
-            [14, 25, "SUBSCRIPTION_TYPE"],
-            [33, 36, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Renewed my Disney Plus subscription for Rs 300 this month.\r",
-        {
-          "entities": [
-            [11, 22, "SUBSCRIPTION_TYPE"],
-            [43, 46, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Subscribed to YouTube Premium for Rs 400 per month.\r",
-        {
-          "entities": [
-            [14, 29, "SUBSCRIPTION_TYPE"],
-            [37, 40, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Renewed my Audible membership for Rs 1000 this year.\r",
-        {
-          "entities": [
-            [11, 18, "SUBSCRIPTION_TYPE"],
-            [37, 41, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Subscribed to Kindle Unlimited for Rs 300 per month.\r",
-        {
-          "entities": [
-            [14, 30, "SUBSCRIPTION_TYPE"],
-            [38, 41, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Renewed my PlayStation Plus subscription for Rs 600 this month.\r",
-        {
-          "entities": [
-            [11, 27, "SUBSCRIPTION_TYPE"],
-            [48, 51, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Subscribed to LinkedIn Premium for Rs 700 per month.\r",
-        {
-          "entities": [
-            [14, 30, "SUBSCRIPTION_TYPE"],
-            [38, 41, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Renewed my Prime Video membership for Rs 1000 this year.\r",
-        {
-          "entities": [
-            [11, 22, "SUBSCRIPTION_TYPE"],
-            [41, 45, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Renewed my Amazon membership for Rs 500 this month.\r",
-        {
-          "entities": [
-            [11, 17, "SUBSCRIPTION_TYPE"],
-            [36, 39, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Renewed my Sony Liv subscription for Rs 300 this month.\r",
-        {
-          "entities": [
-            [11, 19, "SUBSCRIPTION_TYPE"],
-            [40, 43, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Subscribed to Zee5 for Rs 250 per month.\r",
-        {
-          "entities": [
-            [14, 18, "SUBSCRIPTION_TYPE"],
-            [26, 29, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Renewed my Hotstar subscription for Rs 500 this month.\r",
-        {
-          "entities": [
-            [11, 18, "SUBSCRIPTION_TYPE"],
-            [39, 42, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Subscribed to Voot for Rs 150 per month.\r",
-        {
-          "entities": [
-            [14, 18, "SUBSCRIPTION_TYPE"],
-            [26, 29, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Renewed my ALT Balaji subscription for Rs 100 this month.\r",
-        {
-          "entities": [
-            [11, 21, "SUBSCRIPTION_TYPE"],
-            [42, 45, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Subscribed to Gaana Plus for Rs 99 per month.\r",
-        {
-          "entities": [
-            [14, 24, "SUBSCRIPTION_TYPE"],
-            [32, 34, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Renewed my Eros Now subscription for Rs 200 this month.\r",
-        {
-          "entities": [
-            [11, 19, "SUBSCRIPTION_TYPE"],
-            [40, 43, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Subscribed to JioSaavn Pro for Rs 299 per month.\r",
-        {
-          "entities": [
-            [14, 26, "SUBSCRIPTION_TYPE"],
-            [34, 37, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Renewed my Sunnxt subscription for Rs 150 this month.\r",
-        {
-          "entities": [
-            [11, 17, "SUBSCRIPTION_TYPE"],
-            [38, 41, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Subscribed to Letterboxd for Rs 399 per month.\r",
-        {
-          "entities": [
-            [14, 24, "SUBSCRIPTION_TYPE"],
-            [32, 35, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Renewed my Aha subscription for Rs 249 this month.\r",
-        {
-          "entities": [
-            [11, 14, "SUBSCRIPTION_TYPE"],
-            [35, 38, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Subscribed to MX Player for Rs 49 per month.\r",
-        {
-          "entities": [
-            [14, 23, "SUBSCRIPTION_TYPE"],
-            [31, 33, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Renewed my Apple TV Plus subscription for Rs 499 this month.\r",
-        {
-          "entities": [
-            [11, 24, "SUBSCRIPTION_TYPE"],
-            [45, 48, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Renewed my Paramount Plus subscription for Rs 599 this month.\r",
-        {
-          "entities": [
-            [11, 25, "SUBSCRIPTION_TYPE"],
-            [46, 49, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Subscribed to Wynk Music for Rs 49 per month.\r",
-        {
-          "entities": [
-            [14, 24, "SUBSCRIPTION_TYPE"],
-            [32, 34, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Renewed my Blinkit membership for Rs 299 this month.\r",
-        {
-          "entities": [
-            [11, 18, "SUBSCRIPTION_TYPE"],
-            [37, 40, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Renewed my Zomato Gold membership for Rs 1500 this year.\r",
-        {
-          "entities": [
-            [11, 22, "SUBSCRIPTION_TYPE"],
-            [41, 45, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Subscribed to Swiggy One for Rs 149 per month.\r",
-        {
-          "entities": [
-            [14, 24, "SUBSCRIPTION_TYPE"],
-            [32, 35, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Subscribed to Netflix for Rs 1000 this year.\r",
-        {
-          "entities": [
-            [14, 21, "SUBSCRIPTION_TYPE"],
-            [29, 33, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Renewed my Dineout Plus membership for Rs 999 this year.\r",
-        {
-          "entities": [
-            [11, 23, "SUBSCRIPTION_TYPE"],
-            [42, 45, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Subscribed to Uber Eats for Rs 249 per month.\r",
-        {
-          "entities": [
-            [14, 23, "SUBSCRIPTION_TYPE"],
-            [31, 34, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Renewed my Foodpanda membership for Rs 299 this year.\r",
-        {
-          "entities": [
-            [11, 20, "SUBSCRIPTION_TYPE"],
-            [39, 42, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Renewed my Flipkart membership for Rs 999 this year.\r",
-        {
-          "entities": [
-            [11, 19, "SUBSCRIPTION_TYPE"],
-            [38, 41, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Subscribed to Myntra for Rs 149 per month.\r",
-        {
-          "entities": [
-            [14, 20, "SUBSCRIPTION_TYPE"],
-            [28, 31, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Renewed my Big Basket membership for Rs 299 this month.\r",
-        {
-          "entities": [
-            [11, 21, "SUBSCRIPTION_TYPE"],
-            [40, 43, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Subscribed to Grofers for Rs 99 per month.\r",
-        {
-          "entities": [
-            [14, 21, "SUBSCRIPTION_TYPE"],
-            [29, 31, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Renewed my Ola membership for Rs 299 this month.\r",
-        {
-          "entities": [
-            [11, 14, "SUBSCRIPTION_TYPE"],
-            [33, 36, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Subscribed to Rapido for Rs 99 per month.\r",
-        {
-          "entities": [
-            [14, 20, "SUBSCRIPTION_TYPE"],
-            [28, 30, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Subscribed to Ajio for Rs 1490 per month.\r",
-        {
-          "entities": [
-            [14, 18, "SUBSCRIPTION_TYPE"],
-            [26, 30, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Google One for Rs 1999 per month.\r",
-        {
-          "entities": [
-            [0, 10, "SUBSCRIPTION_TYPE"],
-            [18, 22, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Netflix for Rs 1000.\r",
-        {
-          "entities": [
-            [0, 7, "SUBSCRIPTION_TYPE"],
-            [15, 19, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Amazon Prime for Rs 1500.\r",
-        {
-          "entities": [
-            [0, 12, "SUBSCRIPTION_TYPE"],
-            [20, 24, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "HBO Max for Rs 500.\r",
-        {
-          "entities": [
-            [0, 7, "SUBSCRIPTION_TYPE"],
-            [15, 18, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Spotify for Rs 250.\r",
-        {
-          "entities": [
-            [0, 7, "SUBSCRIPTION_TYPE"],
-            [15, 18, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Apple Music for Rs 200.\r",
-        {
-          "entities": [
-            [0, 11, "SUBSCRIPTION_TYPE"],
-            [19, 22, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Disney Plus for Rs 300.\r",
-        {
-          "entities": [
-            [0, 11, "SUBSCRIPTION_TYPE"],
-            [19, 22, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "YouTube Premium for Rs 400.\r",
-        {
-          "entities": [
-            [0, 15, "SUBSCRIPTION_TYPE"],
-            [23, 26, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Audible for Rs 1000.\r",
-        {
-          "entities": [
-            [0, 7, "SUBSCRIPTION_TYPE"],
-            [15, 19, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Kindle Unlimited for Rs 300.\r",
-        {
-          "entities": [
-            [0, 16, "SUBSCRIPTION_TYPE"],
-            [24, 27, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "PlayStation Plus for Rs 600.\r",
-        {
-          "entities": [
-            [0, 16, "SUBSCRIPTION_TYPE"],
-            [24, 27, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "LinkedIn Premium for Rs 700.\r",
-        {
-          "entities": [
-            [0, 16, "SUBSCRIPTION_TYPE"],
-            [24, 27, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Prime Video for Rs 1000.\r",
-        {
-          "entities": [
-            [0, 11, "SUBSCRIPTION_TYPE"],
-            [19, 23, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Amazon for Rs 500.\r",
-        {
-          "entities": [
-            [0, 6, "SUBSCRIPTION_TYPE"],
-            [14, 17, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Sony Liv for Rs 300.\r",
-        {
-          "entities": [
-            [0, 8, "SUBSCRIPTION_TYPE"],
-            [16, 19, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Zee5 for Rs 250.\r",
-        {
-          "entities": [
-            [0, 4, "SUBSCRIPTION_TYPE"],
-            [12, 15, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Hotstar for Rs 500.\r",
-        {
-          "entities": [
-            [0, 7, "SUBSCRIPTION_TYPE"],
-            [15, 18, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Voot for Rs 150.\r",
-        {
-          "entities": [
-            [0, 4, "SUBSCRIPTION_TYPE"],
-            [12, 15, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "ALT Balaji for Rs 100.\r",
-        {
-          "entities": [
-            [0, 10, "SUBSCRIPTION_TYPE"],
-            [18, 21, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Gaana Plus for Rs 99.\r",
-        {
-          "entities": [
-            [0, 10, "SUBSCRIPTION_TYPE"],
-            [18, 20, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Eros Now for Rs 200.\r",
-        {
-          "entities": [
-            [0, 8, "SUBSCRIPTION_TYPE"],
-            [16, 19, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "JioSaavn Pro for Rs 299.\r",
-        {
-          "entities": [
-            [0, 12, "SUBSCRIPTION_TYPE"],
-            [20, 23, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Sunnxt for Rs 150.\r",
-        {
-          "entities": [
-            [0, 6, "SUBSCRIPTION_TYPE"],
-            [14, 17, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Letterboxd for Rs 399.\r",
-        {
-          "entities": [
-            [0, 10, "SUBSCRIPTION_TYPE"],
-            [18, 21, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Aha for Rs 249.\r",
-        {
-          "entities": [
-            [0, 3, "SUBSCRIPTION_TYPE"],
-            [11, 14, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "MX Player for Rs 49.\r",
-        {
-          "entities": [
-            [0, 9, "SUBSCRIPTION_TYPE"],
-            [17, 19, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Apple TV Plus for Rs 499.\r",
-        {
-          "entities": [
-            [0, 13, "SUBSCRIPTION_TYPE"],
-            [21, 24, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Paramount Plus for Rs 599.\r",
-        {
-          "entities": [
-            [0, 14, "SUBSCRIPTION_TYPE"],
-            [22, 25, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Wynk Music for Rs 49.\r",
-        {
-          "entities": [
-            [0, 10, "SUBSCRIPTION_TYPE"],
-            [18, 20, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Blinkit for Rs 299.\r",
-        {
-          "entities": [
-            [0, 7, "SUBSCRIPTION_TYPE"],
-            [15, 18, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Zomato Gold for Rs 1500.\r",
-        {
-          "entities": [
-            [0, 11, "SUBSCRIPTION_TYPE"],
-            [19, 23, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Swiggy One for Rs 149.\r",
-        {
-          "entities": [
-            [0, 10, "SUBSCRIPTION_TYPE"],
-            [18, 21, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Dineout Plus for Rs 999.\r",
-        {
-          "entities": [
-            [0, 12, "SUBSCRIPTION_TYPE"],
-            [20, 23, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Uber Eats for Rs 249.\r",
-        {
-          "entities": [
-            [0, 9, "SUBSCRIPTION_TYPE"],
-            [17, 20, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Foodpanda for Rs 299.\r",
-        {
-          "entities": [
-            [0, 9, "SUBSCRIPTION_TYPE"],
-            [17, 20, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Flipkart for Rs 999.\r",
-        {
-          "entities": [
-            [0, 8, "SUBSCRIPTION_TYPE"],
-            [16, 19, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Myntra for Rs 149.\r",
-        {
-          "entities": [
-            [0, 6, "SUBSCRIPTION_TYPE"],
-            [14, 17, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Big Basket for Rs 299.\r",
-        {
-          "entities": [
-            [0, 10, "SUBSCRIPTION_TYPE"],
-            [18, 21, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Grofers for Rs 99.\r",
-        {
-          "entities": [
-            [0, 7, "SUBSCRIPTION_TYPE"],
-            [15, 17, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Ola for Rs 299.\r",
-        {
-          "entities": [
-            [0, 3, "SUBSCRIPTION_TYPE"],
-            [11, 14, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Rapido for Rs 99.\r",
-        {
-          "entities": [
-            [0, 6, "SUBSCRIPTION_TYPE"],
-            [14, 16, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Ajio for Rs 1490.\r",
-        {
-          "entities": [
-            [0, 4, "SUBSCRIPTION_TYPE"],
-            [12, 16, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Google One for Rs 1999.\r",
-        {
-          "entities": [
-            [0, 10, "SUBSCRIPTION_TYPE"],
-            [18, 22, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Netflix 1200\r",
-        {
-          "entities": [
-            [0, 7, "SUBSCRIPTION_TYPE"],
-            [8, 12, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Amazon Prime 2500\r",
-        {
-          "entities": [
-            [0, 12, "SUBSCRIPTION_TYPE"],
-            [13, 17, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Spotify 300\r",
-        {
-          "entities": [
-            [0, 7, "SUBSCRIPTION_TYPE"],
-            [8, 11, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Disney Plus 400\r",
-        {
-          "entities": [
-            [0, 11, "SUBSCRIPTION_TYPE"],
-            [12, 15, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "YouTube Premium 750\r",
-        {
-          "entities": [
-            [0, 15, "SUBSCRIPTION_TYPE"],
-            [16, 19, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Audible 1100\r",
-        {
-          "entities": [
-            [0, 7, "SUBSCRIPTION_TYPE"],
-            [8, 12, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "LinkedIn Premium 800\r",
-        {
-          "entities": [
-            [0, 16, "SUBSCRIPTION_TYPE"],
-            [17, 20, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Zee5 350\r",
-        {
-          "entities": [
-            [0, 4, "SUBSCRIPTION_TYPE"],
-            [5, 8, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Hotstar 600\r",
-        {
-          "entities": [
-            [0, 7, "SUBSCRIPTION_TYPE"],
-            [8, 11, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Apple Music 350\r",
-        {
-          "entities": [
-            [0, 11, "SUBSCRIPTION_TYPE"],
-            [12, 15, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Sony Liv 500\r",
-        {
-          "entities": [
-            [0, 8, "SUBSCRIPTION_TYPE"],
-            [9, 12, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "PlayStation Plus 900\r",
-        {
-          "entities": [
-            [0, 16, "SUBSCRIPTION_TYPE"],
-            [17, 20, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Kindle Unlimited 400\r",
-        {
-          "entities": [
-            [0, 16, "SUBSCRIPTION_TYPE"],
-            [17, 20, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Prime Video 1200\r",
-        {
-          "entities": [
-            [0, 11, "SUBSCRIPTION_TYPE"],
-            [12, 16, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "JioSaavn Pro 350\r",
-        {
-          "entities": [
-            [0, 12, "SUBSCRIPTION_TYPE"],
-            [13, 16, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Aha 1500\r",
-        {
-          "entities": [
-            [0, 3, "SUBSCRIPTION_TYPE"],
-            [4, 8, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Paramount Plus 700\r",
-        {
-          "entities": [
-            [0, 14, "SUBSCRIPTION_TYPE"],
-            [15, 18, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Apple TV Plus 600\r",
-        {
-          "entities": [
-            [0, 13, "SUBSCRIPTION_TYPE"],
-            [14, 17, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "MX Player 499\r",
-        {
-          "entities": [
-            [0, 9, "SUBSCRIPTION_TYPE"],
-            [10, 13, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Dineout Plus 1200\r",
-        {
-          "entities": [
-            [0, 12, "SUBSCRIPTION_TYPE"],
-            [13, 17, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "ALT Balaji 200\r",
-        {
-          "entities": [
-            [0, 10, "SUBSCRIPTION_TYPE"],
-            [11, 14, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Gaana Plus 199\r",
-        {
-          "entities": [
-            [0, 10, "SUBSCRIPTION_TYPE"],
-            [11, 14, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Flipkart 800\r",
-        {
-          "entities": [
-            [0, 8, "SUBSCRIPTION_TYPE"],
-            [9, 12, "EXPENSE"]
-          ]
-        }
-      ],
-      [
-        "Blinkit 300",
-        {
-          "entities": [
-            [0, 7, "SUBSCRIPTION_TYPE"],
-            [8, 11, "EXPENSE"]
-          ]
-        }
-      ],
+      ["Renewed my Netflix subscription for Rs 2000 this month.\r", { "entities": [ [11, 18, "SUBSCRIPTION_TYPE"], [39, 43, "EXPENSE"] ] } ],
+      ["Renewed my Amazon Prime membership for Rs 1500 this year.\r", { "entities": [ [11, 23, "SUBSCRIPTION_TYPE"], [42, 46, "EXPENSE"] ] } ],
+      ["Subscribed to HBO Max for Rs 500 per month.\r", { "entities": [ [14, 21, "SUBSCRIPTION_TYPE"], [29, 32, "EXPENSE"] ] } ],
+      ["Renewed my Spotify Premium subscription for Rs 250 this month.\r", { "entities": [ [11, 26, "SUBSCRIPTION_TYPE"], [47, 50, "EXPENSE"] ] } ],
+      ["Subscribed to Apple Music for Rs 200 per month.\r", { "entities": [ [14, 25, "SUBSCRIPTION_TYPE"], [33, 36, "EXPENSE"] ] } ],
+      ["Renewed my Disney Plus subscription for Rs 300 this month.\r", { "entities": [ [11, 22, "SUBSCRIPTION_TYPE"], [43, 46, "EXPENSE"] ] } ],
+      ["Subscribed to YouTube Premium for Rs 400 per month.\r", { "entities": [ [14, 29, "SUBSCRIPTION_TYPE"], [37, 40, "EXPENSE"] ] } ],
+      ["Renewed my Audible membership for Rs 1000 this year.\r", { "entities": [ [11, 18, "SUBSCRIPTION_TYPE"], [37, 41, "EXPENSE"] ] } ],
+      ["Subscribed to Kindle Unlimited for Rs 300 per month.\r", { "entities": [ [14, 30, "SUBSCRIPTION_TYPE"], [38, 41, "EXPENSE"] ] } ],
+      ["Renewed my PlayStation Plus subscription for Rs 600 this month.\r", { "entities": [ [11, 27, "SUBSCRIPTION_TYPE"], [48, 51, "EXPENSE"] ] } ],
+      ["Subscribed to LinkedIn Premium for Rs 700 per month.\r", { "entities": [ [14, 30, "SUBSCRIPTION_TYPE"], [38, 41, "EXPENSE"] ] } ],
+      ["Renewed my Prime Video membership for Rs 1000 this year.\r", { "entities": [ [11, 22, "SUBSCRIPTION_TYPE"], [41, 45, "EXPENSE"] ] } ],
+      ["Renewed my Amazon membership for Rs 500 this month.\r", { "entities": [ [11, 17, "SUBSCRIPTION_TYPE"], [36, 39, "EXPENSE"] ] } ],
+      ["Renewed my Sony Liv subscription for Rs 300 this month.\r", { "entities": [ [11, 19, "SUBSCRIPTION_TYPE"], [40, 43, "EXPENSE"] ] } ],
+      ["Subscribed to Zee5 for Rs 250 per month.\r", { "entities": [ [14, 18, "SUBSCRIPTION_TYPE"], [26, 29, "EXPENSE"] ] } ],
+      ["Renewed my Hotstar subscription for Rs 500 this month.\r", { "entities": [ [11, 18, "SUBSCRIPTION_TYPE"], [39, 42, "EXPENSE"] ] } ],
+      ["Subscribed to Voot for Rs 150 per month.\r", { "entities": [ [14, 18, "SUBSCRIPTION_TYPE"], [26, 29, "EXPENSE"] ] } ],
+      ["Renewed my ALT Balaji subscription for Rs 100 this month.\r", { "entities": [ [11, 21, "SUBSCRIPTION_TYPE"], [42, 45, "EXPENSE"] ] } ],
+      ["Subscribed to Gaana Plus for Rs 99 per month.\r", { "entities": [ [14, 24, "SUBSCRIPTION_TYPE"], [32, 34, "EXPENSE"] ] } ],
+      ["Renewed my Eros Now subscription for Rs 200 this month.\r", { "entities": [ [11, 19, "SUBSCRIPTION_TYPE"], [40, 43, "EXPENSE"] ] } ],
+      ["Subscribed to JioSaavn Pro for Rs 299 per month.\r", { "entities": [ [14, 26, "SUBSCRIPTION_TYPE"], [34, 37, "EXPENSE"] ] } ],
+      ["Renewed my Sunnxt subscription for Rs 150 this month.\r", { "entities": [ [11, 17, "SUBSCRIPTION_TYPE"], [38, 41, "EXPENSE"] ] } ],
+      ["Subscribed to Letterboxd for Rs 399 per month.\r", { "entities": [ [14, 24, "SUBSCRIPTION_TYPE"], [32, 35, "EXPENSE"] ] } ],
+      ["Renewed my Aha subscription for Rs 249 this month.\r", { "entities": [ [11, 14, "SUBSCRIPTION_TYPE"], [35, 38, "EXPENSE"] ] } ],
+      ["Subscribed to MX Player for Rs 49 per month.\r", { "entities": [ [14, 23, "SUBSCRIPTION_TYPE"], [31, 33, "EXPENSE"] ] } ],
+      ["Renewed my Apple TV Plus subscription for Rs 499 this month.\r", { "entities": [ [11, 24, "SUBSCRIPTION_TYPE"], [45, 48, "EXPENSE"] ] } ],
+      ["Renewed my Paramount Plus subscription for Rs 599 this month.\r", { "entities": [ [11, 25, "SUBSCRIPTION_TYPE"], [46, 49, "EXPENSE"] ] } ],
+      ["Subscribed to Wynk Music for Rs 49 per month.\r", { "entities": [ [14, 24, "SUBSCRIPTION_TYPE"], [32, 34, "EXPENSE"] ] } ],
+      ["Renewed my Blinkit membership for Rs 299 this month.\r", { "entities": [ [11, 18, "SUBSCRIPTION_TYPE"], [37, 40, "EXPENSE"] ] } ],
+      ["Renewed my Zomato Gold membership for Rs 1500 this year.\r", { "entities": [ [11, 22, "SUBSCRIPTION_TYPE"], [41, 45, "EXPENSE"] ] } ],
+      ["Subscribed to Swiggy One for Rs 149 per month.\r", { "entities": [ [14, 24, "SUBSCRIPTION_TYPE"], [32, 35, "EXPENSE"] ] } ],
+      ["Subscribed to Netflix for Rs 1000 this year.\r", { "entities": [ [14, 21, "SUBSCRIPTION_TYPE"], [29, 33, "EXPENSE"] ] } ],
+      ["Renewed my Dineout Plus membership for Rs 999 this year.\r", { "entities": [ [11, 23, "SUBSCRIPTION_TYPE"], [42, 45, "EXPENSE"] ] } ],
+      ["Subscribed to Uber Eats for Rs 249 per month.\r", { "entities": [ [14, 23, "SUBSCRIPTION_TYPE"], [31, 34, "EXPENSE"] ] } ],
+      ["Renewed my Foodpanda membership for Rs 299 this year.\r", { "entities": [ [11, 20, "SUBSCRIPTION_TYPE"], [39, 42, "EXPENSE"] ] } ],
+      ["Renewed my Flipkart membership for Rs 999 this year.\r", { "entities": [ [11, 19, "SUBSCRIPTION_TYPE"], [38, 41, "EXPENSE"] ] } ],
+      ["Subscribed to Myntra for Rs 149 per month.\r", { "entities": [ [14, 20, "SUBSCRIPTION_TYPE"], [28, 31, "EXPENSE"] ] } ],
+      ["Renewed my Big Basket membership for Rs 299 this month.\r", { "entities": [ [11, 21, "SUBSCRIPTION_TYPE"], [40, 43, "EXPENSE"] ] } ],
+      ["Subscribed to Grofers for Rs 99 per month.\r", { "entities": [ [14, 21, "SUBSCRIPTION_TYPE"], [29, 31, "EXPENSE"] ] } ],
+      ["Renewed my Ola membership for Rs 299 this month.\r", { "entities": [ [11, 14, "SUBSCRIPTION_TYPE"], [33, 36, "EXPENSE"] ] } ],
+      ["Subscribed to Rapido for Rs 99 per month.\r", { "entities": [ [14, 20, "SUBSCRIPTION_TYPE"], [28, 30, "EXPENSE"] ] } ],
+      ["Subscribed to Ajio for Rs 1490 per month.\r", { "entities": [ [14, 18, "SUBSCRIPTION_TYPE"], [26, 30, "EXPENSE"] ] } ],
+      ["Google One for Rs 1999 per month.\r", { "entities": [ [0, 10, "SUBSCRIPTION_TYPE"], [18, 22, "EXPENSE"] ] } ],
+      ["Netflix for Rs 1000.\r", { "entities": [ [0, 7, "SUBSCRIPTION_TYPE"], [15, 19, "EXPENSE"] ] } ],
+      ["Amazon Prime for Rs 1500.\r", { "entities": [ [0, 12, "SUBSCRIPTION_TYPE"], [20, 24, "EXPENSE"] ] } ],
+      ["HBO Max for Rs 500.\r", { "entities": [ [0, 7, "SUBSCRIPTION_TYPE"], [15, 18, "EXPENSE"] ] } ],
+      ["Spotify for Rs 250.\r", { "entities": [ [0, 7, "SUBSCRIPTION_TYPE"], [15, 18, "EXPENSE"] ] } ],
+      ["Apple Music for Rs 200.\r", { "entities": [ [0, 11, "SUBSCRIPTION_TYPE"], [19, 22, "EXPENSE"] ] } ],
+      ["Disney Plus for Rs 300.\r", { "entities": [ [0, 11, "SUBSCRIPTION_TYPE"], [19, 22, "EXPENSE"] ] } ],
+      ["YouTube Premium for Rs 400.\r", { "entities": [ [0, 15, "SUBSCRIPTION_TYPE"], [23, 26, "EXPENSE"] ] } ],
+      ["Audible for Rs 1000.\r", { "entities": [ [0, 7, "SUBSCRIPTION_TYPE"], [15, 19, "EXPENSE"] ] } ],
+      ["Kindle Unlimited for Rs 300.\r", { "entities": [ [0, 16, "SUBSCRIPTION_TYPE"], [24, 27, "EXPENSE"] ] } ],
+      ["PlayStation Plus for Rs 600.\r", { "entities": [ [0, 16, "SUBSCRIPTION_TYPE"], [24, 27, "EXPENSE"] ] } ],
+      ["LinkedIn Premium for Rs 700.\r", { "entities": [ [0, 16, "SUBSCRIPTION_TYPE"], [24, 27, "EXPENSE"] ] } ],
+      ["Prime Video for Rs 1000.\r", { "entities": [ [0, 11, "SUBSCRIPTION_TYPE"], [19, 23, "EXPENSE"] ] } ],
+      ["Amazon for Rs 500.\r", { "entities": [ [0, 6, "SUBSCRIPTION_TYPE"], [14, 17, "EXPENSE"] ] } ],
+      ["Sony Liv for Rs 300.\r", { "entities": [ [0, 8, "SUBSCRIPTION_TYPE"], [16, 19, "EXPENSE"] ] } ],
+      ["Zee5 for Rs 250.\r", { "entities": [ [0, 4, "SUBSCRIPTION_TYPE"], [12, 15, "EXPENSE"] ] } ],
+      ["Hotstar for Rs 500.\r", { "entities": [ [0, 7, "SUBSCRIPTION_TYPE"], [15, 18, "EXPENSE"] ] } ],
+      ["Voot for Rs 150.\r", { "entities": [ [0, 4, "SUBSCRIPTION_TYPE"], [12, 15, "EXPENSE"] ] } ],
+      ["ALT Balaji for Rs 100.\r", { "entities": [ [0, 10, "SUBSCRIPTION_TYPE"], [18, 21, "EXPENSE"] ] } ],
+      ["Gaana Plus for Rs 99.\r", { "entities": [ [0, 10, "SUBSCRIPTION_TYPE"], [18, 20, "EXPENSE"] ] } ],
+      ["Eros Now for Rs 200.\r", { "entities": [ [0, 8, "SUBSCRIPTION_TYPE"], [16, 19, "EXPENSE"] ] } ],
+      ["JioSaavn Pro for Rs 299.\r", { "entities": [ [0, 12, "SUBSCRIPTION_TYPE"], [20, 23, "EXPENSE"] ] } ],
+      ["Sunnxt for Rs 150.\r", { "entities": [ [0, 6, "SUBSCRIPTION_TYPE"], [14, 17, "EXPENSE"] ] } ],
+      ["Letterboxd for Rs 399.\r", { "entities": [ [0, 10, "SUBSCRIPTION_TYPE"], [18, 21, "EXPENSE"] ] } ],
+      ["Aha for Rs 249.\r", { "entities": [ [0, 3, "SUBSCRIPTION_TYPE"], [11, 14, "EXPENSE"] ] } ],
+      ["MX Player for Rs 49.\r", { "entities": [ [0, 9, "SUBSCRIPTION_TYPE"], [17, 19, "EXPENSE"] ] } ],
+      ["Apple TV Plus for Rs 499.\r", { "entities": [ [0, 13, "SUBSCRIPTION_TYPE"], [21, 24, "EXPENSE"] ] } ],
+      ["Paramount Plus for Rs 599.\r", { "entities": [ [0, 14, "SUBSCRIPTION_TYPE"], [22, 25, "EXPENSE"] ] } ],
+      ["Wynk Music for Rs 49.\r", { "entities": [ [0, 10, "SUBSCRIPTION_TYPE"], [18, 20, "EXPENSE"] ] } ],
+      ["Blinkit for Rs 299.\r", { "entities": [ [0, 7, "SUBSCRIPTION_TYPE"], [15, 18, "EXPENSE"] ] } ],
+      ["Zomato Gold for Rs 1500.\r", { "entities": [ [0, 11, "SUBSCRIPTION_TYPE"], [19, 23, "EXPENSE"] ] } ],
+      ["Swiggy One for Rs 149.\r", { "entities": [ [0, 10, "SUBSCRIPTION_TYPE"], [18, 21, "EXPENSE"] ] } ],
+      ["Dineout Plus for Rs 999.\r", { "entities": [ [0, 12, "SUBSCRIPTION_TYPE"], [20, 23, "EXPENSE"] ] } ],
+      ["Uber Eats for Rs 249.\r", { "entities": [ [0, 9, "SUBSCRIPTION_TYPE"], [17, 20, "EXPENSE"] ] } ],
+      ["Foodpanda for Rs 299.\r", { "entities": [ [0, 9, "SUBSCRIPTION_TYPE"], [17, 20, "EXPENSE"] ] } ],
+      ["Flipkart for Rs 999.\r", { "entities": [ [0, 8, "SUBSCRIPTION_TYPE"], [16, 19, "EXPENSE"] ] } ],
+      ["Myntra for Rs 149.\r", { "entities": [ [0, 6, "SUBSCRIPTION_TYPE"], [14, 17, "EXPENSE"] ] } ],
+      ["Big Basket for Rs 299.\r", { "entities": [ [0, 10, "SUBSCRIPTION_TYPE"], [18, 21, "EXPENSE"] ] } ],
+      ["Grofers for Rs 99.\r", { "entities": [ [0, 7, "SUBSCRIPTION_TYPE"], [15, 17, "EXPENSE"] ] } ],
+      ["Ola for Rs 299.\r", { "entities": [ [0, 3, "SUBSCRIPTION_TYPE"], [11, 14, "EXPENSE"] ] } ],
+      ["Rapido for Rs 99.\r", { "entities": [ [0, 6, "SUBSCRIPTION_TYPE"], [14, 16, "EXPENSE"] ] } ],
+      ["Ajio for Rs 1490.\r", { "entities": [ [0, 4, "SUBSCRIPTION_TYPE"], [12, 16, "EXPENSE"] ] } ],
+      ["Google One for Rs 1999.\r", { "entities": [ [0, 10, "SUBSCRIPTION_TYPE"], [18, 22, "EXPENSE"] ] } ],
+      ["Netflix 1200\r", { "entities": [ [0, 7, "SUBSCRIPTION_TYPE"], [8, 12, "EXPENSE"] ] } ],
+      ["Amazon Prime 2500\r", { "entities": [ [0, 12, "SUBSCRIPTION_TYPE"], [13, 17, "EXPENSE"] ] } ],
+      ["Spotify 300\r", { "entities": [ [0, 7, "SUBSCRIPTION_TYPE"], [8, 11, "EXPENSE"] ] } ],
+      ["Disney Plus 400\r", { "entities": [ [0, 11, "SUBSCRIPTION_TYPE"], [12, 15, "EXPENSE"] ] } ],
+      ["YouTube Premium 750\r", { "entities": [ [0, 15, "SUBSCRIPTION_TYPE"], [16, 19, "EXPENSE"] ] } ],
+      ["Audible 1100\r", { "entities": [ [0, 7, "SUBSCRIPTION_TYPE"], [8, 12, "EXPENSE"] ] } ],
+      ["LinkedIn Premium 800\r", { "entities": [ [0, 16, "SUBSCRIPTION_TYPE"], [17, 20, "EXPENSE"] ] } ],
+      ["Zee5 350\r", { "entities": [ [0, 4, "SUBSCRIPTION_TYPE"], [5, 8, "EXPENSE"] ] } ],
+      ["Hotstar 600\r", { "entities": [ [0, 7, "SUBSCRIPTION_TYPE"], [8, 11, "EXPENSE"] ] } ],
+      ["Apple Music 350\r", { "entities": [ [0, 11, "SUBSCRIPTION_TYPE"], [12, 15, "EXPENSE"] ] } ],
+      ["Sony Liv 500\r", { "entities": [ [0, 8, "SUBSCRIPTION_TYPE"], [9, 12, "EXPENSE"] ] } ],
+      ["PlayStation Plus 900\r", { "entities": [ [0, 16, "SUBSCRIPTION_TYPE"], [17, 20, "EXPENSE"] ] } ],
+      ["Kindle Unlimited 400\r", { "entities": [ [0, 16, "SUBSCRIPTION_TYPE"], [17, 20, "EXPENSE"] ] } ],
+      ["Prime Video 1200\r", { "entities": [ [0, 11, "SUBSCRIPTION_TYPE"], [12, 16, "EXPENSE"] ] } ],
+      ["JioSaavn Pro 350\r", { "entities": [ [0, 12, "SUBSCRIPTION_TYPE"], [13, 16, "EXPENSE"] ] } ],
+      ["Aha 1500\r", { "entities": [ [0, 3, "SUBSCRIPTION_TYPE"], [4, 8, "EXPENSE"] ] } ],
+      ["Paramount Plus 700\r", { "entities": [ [0, 14, "SUBSCRIPTION_TYPE"], [15, 18, "EXPENSE"] ] } ],
+      ["Apple TV Plus 600\r", { "entities": [ [0, 13, "SUBSCRIPTION_TYPE"], [14, 17, "EXPENSE"] ] } ],
+      ["MX Player 499\r", { "entities": [ [0, 9, "SUBSCRIPTION_TYPE"], [10, 13, "EXPENSE"] ] } ],
+      ["Dineout Plus 1200\r", { "entities": [ [0, 12, "SUBSCRIPTION_TYPE"], [13, 17, "EXPENSE"] ] } ],
+      ["ALT Balaji 200\r", { "entities": [ [0, 10, "SUBSCRIPTION_TYPE"], [11, 14, "EXPENSE"] ] } ],
+      ["Gaana Plus 199\r", { "entities": [ [0, 10, "SUBSCRIPTION_TYPE"], [11, 14, "EXPENSE"] ] } ],
+      ["Flipkart 800\r", { "entities": [ [0, 8, "SUBSCRIPTION_TYPE"], [9, 12, "EXPENSE"] ] } ],
+      ["Blinkit 300", { "entities": [ [0, 7, "SUBSCRIPTION_TYPE"], [8, 11, "EXPENSE"] ] } ],
 
+      
+      
       ["I spent Rs 110 on chicken burger today\r",{"entities":[[11,14,"EXPENSE"],[18,32,"FOOD_ITEM"]]}],
       ["Today's snack was Rs 10 for banana.\r",{"entities":[[21,23,"EXPENSE"],[28,34,"FOOD_ITEM"]]}],
       ["Dinner cost me Rs 300 for a delicious pizza.\r",{"entities":[[18,21,"EXPENSE"],[28,43,"FOOD_ITEM"]]}],
@@ -1011,6 +141,8 @@
       ["Rs 80 sandwich\r",{"entities":[[3,5,"EXPENSE"],[6,14,"FOOD_ITEM"]]}],
       ["Rs 30 Coffee\r",{"entities":[[3,5,"EXPENSE"],[6,12,"FOOD_ITEM"]]}],
       
+
+
       ["Took a Rs 110 bus ride today.\r",{"entities":[[10,13,"EXPENSE"],[14,17,"TRAVEL_MODE"]]}],
       ["Just spent Rs 10 on the metro.\r",{"entities":[[14,16,"EXPENSE"],[24,29,"TRAVEL_MODE"]]}],
       ["Hopped into a taxi the ride cost me Rs 300.\r",{"entities":[[14,18,"TRAVEL_MODE"],[39,42,"EXPENSE"]]}],
@@ -1044,6 +176,8 @@
       ["Rs 5 bicycle\r",{"entities":[[3,4,"TRAVEL_DESTINATION"],[5,12,"TRAVEL_MODE"]]}],["Rs 30 rickshaw\r",{"entities":[[3,5,"EXPENSE"],[6,14,"TRAVEL_MODE"]]}],
       ["Rs 2500 road trip to Mountains\r",{"entities":[[3,7,"EXPENSE"],[21,30,"TRAVEL_DESTINATION"]]}],
       ["Rs 100 electric scooter rental",{"entities":[[3,6,"EXPENSE"],[7,23,"TRAVEL_MODE"]]}],
+
+
 
       ["I bought a Rs 700 shirt yesterday.\r",{"entities":[[14,17,"EXPENSE"],[18,23,"CLOTHING_TYPE"]]}],
       ["Just purchased a Rs 450 pair of jeans.\r",{"entities":[[20,23,"EXPENSE"],[32,37,"CLOTHING_TYPE"]]}],
@@ -1162,8 +296,80 @@
       ["Rs 120 cotton briefs\r",{"entities":[[3,6,"EXPENSE"],[7,20,"CLOTHING_TYPE"]]}],
       ["Rs 180 set of lace panties\r",{"entities":[[3,6,"EXPENSE"],[14,26,"CLOTHING_TYPE"]]}],
       ["Rs 200 pair of silk boxers\r",{"entities":[[3,6,"EXPENSE"],[15,26,"CLOTHING_TYPE"]]}],
-      ["Rs 150 pair of seamless underwear\r",{"entities":[[3,6,"EXPENSE"],[15,33,"CLOTHING_TYPE"]]}]
+      ["Rs 150 pair of seamless underwear\r",{"entities":[[3,6,"EXPENSE"],[15,33,"CLOTHING_TYPE"]]}],
 
 
+
+      ["Just paid the electricity bill and the total amount was Rs 1500.\r",{"entities":[[14,30,"BILL_TYPE"],[59,63,"EXPENSE"]]}],
+      ["Took care of the water bill today, it came out to Rs 700.\r",{"entities":[[17,27,"BILL_TYPE"],[53,56,"EXPENSE"]]}],
+      ["Paid the internet bill for this month and the total was Rs 1200.\r",{"entities":[[9,22,"BILL_TYPE"],[59,63,"EXPENSE"]]}],
+      ["Just settled the phone bill, it was Rs 800 this time.\r",{"entities":[[17,27,"BILL_TYPE"],[39,42,"EXPENSE"]]}],
+      ["Covered the gas bill which came to Rs 1000.\r",{"entities":[[12,20,"BILL_TYPE"],[38,42,"EXPENSE"]]}],
+      ["Paid the cable TV bill and the total amount due was Rs 600.\r",{"entities":[[9,22,"BILL_TYPE"],[55,58,"EXPENSE"]]}],
+      ["Took care of the garbage collection bill - it was Rs 300 this time.\r",{"entities":[[17,40,"BILL_TYPE"],[53,56,"EXPENSE"]]}],
+      ["Just handled the home insurance premium - it came to Rs 2500.\r",{"entities":[[17,39,"BILL_TYPE"],[56,60,"EXPENSE"]]}],
+      ["Paid the property tax - total amount due was Rs 1800.\r",{"entities":[[9,21,"BILL_TYPE"],[48,52,"EXPENSE"]]}],
+      ["Covered the car insurance premium - came out to Rs 3500.\r",{"entities":[[12,33,"BILL_TYPE"],[51,55,"EXPENSE"]]}],
+      ["Paid the rent for the month - total was Rs 15000.\r",{"entities":[[9,13,"BILL_TYPE"],[43,48,"EXPENSE"]]}],
+      ["Just handled the bills which came out to Rs 7000.\r",{"entities":[[17,22,"BILL_TYPE"],[44,48,"EXPENSE"]]}],
+      ["Settled the health insurance premium - it came to Rs 2000.\r",{"entities":[[12,36,"BILL_TYPE"],[53,57,"EXPENSE"]]}],
+      ["Covered the car loan installment - total amount due was Rs 12500.\r",{"entities":[[12,32,"BILL_TYPE"],[59,64,"EXPENSE"]]}],
+      ["Paid the mortgage for the house - it was Rs 25000 this month.\r",{"entities":[[9,17,"BILL_TYPE"],[44,49,"EXPENSE"]]}],
+      ["Just handled the bill - it came out to Rs 3000.\r",{"entities":[[17,21,"BILL_TYPE"],[42,46,"EXPENSE"]]}],
+      ["Covered the car registration renewal - total amount due was Rs 4000.\r",{"entities":[[12,36,"BILL_TYPE"],[63,67,"EXPENSE"]]}],
+      ["Settled the credit card bill - total amount due was Rs 7000.\r",{"entities":[[12,28,"BILL_TYPE"],[55,59,"EXPENSE"]]}],
+      ["Paid the medical bills for last month's treatment - total was Rs 5000.\r",{"entities":[[9,22,"BILL_TYPE"],[65,69,"EXPENSE"]]}],
+      ["Covered the life insurance premium - total amount due was Rs 3000.\r",{"entities":[[12,26,"BILL_TYPE"],[61,65,"EXPENSE"]]}],
+      ["Paid the property tax - it was Rs 2000 this quarter.\r",{"entities":[[9,21,"BILL_TYPE"],[34,38,"EXPENSE"]]}],
+      ["Paid the income tax for the fiscal year - total was Rs 50000.\r",{"entities":[[9,19,"BILL_TYPE"],[55,60,"EXPENSE"]]}],
+      ["Settled the property tax for the house - it came to Rs 15000 this quarter.\r",{"entities":[[12,24,"BILL_TYPE"],[55,60,"EXPENSE"]]}],
+      ["Covered the sales tax for the business - total amount due was Rs 10000.\r",{"entities":[[12,21,"BILL_TYPE"],[65,70,"EXPENSE"]]}],
+      ["Paid the vehicle tax for the car - it was Rs 5000 this year.\r",{"entities":[[9,20,"BILL_TYPE"],[45,49,"EXPENSE"]]}],
+      ["Just handled the excise tax for the manufacturing unit - it came out to Rs 20000.\r",{"entities":[[17,27,"BILL_TYPE"],[75,80,"EXPENSE"]]}],
+      ["Covered the property assessment tax - total amount due was Rs 8000.\r",{"entities":[[12,35,"BILL_TYPE"],[62,66,"EXPENSE"]]}],
+      ["Settled the goods and services tax - it was Rs 30000 this quarter.\r",{"entities":[[12,34,"BILL_TYPE"],[47,52,"EXPENSE"]]}],
+      ["Paid the import duty for the imported goods - total was Rs 25000.\r",{"entities":[[9,20,"BILL_TYPE"],[59,64,"EXPENSE"]]}],
+      ["Paid my taxes which was Rs 80000 this year.\r",{"entities":[[8,13,"BILL_TYPE"],[27,32,"EXPENSE"]]}],
+      ["Covered the property transfer tax for the real estate transaction - it came to Rs 12000.\r",{"entities":[[12,33,"BILL_TYPE"],[82,87,"EXPENSE"]]}],
+      ["Just handled the value added tax for the business - it was Rs 18000 this month.\r",{"entities":[[17,32,"BILL_TYPE"],[62,67,"EXPENSE"]]}],
+      ["Paid the professional tax for the employees - total amount due was Rs 5000.\r",{"entities":[[9,25,"BILL_TYPE"],[70,74,"EXPENSE"]]}],
+      ["Covered the local body tax - it came out to Rs 3000 this quarter.\r",{"entities":[[12,26,"BILL_TYPE"],[47,51,"EXPENSE"]]}],
+      ["Settled the customs duty for the imported goods - total amount due was Rs 15000.\r",{"entities":[[12,24,"BILL_TYPE"],[74,79,"EXPENSE"]]}],
+      ["electricity bill 1500\r",{"entities":[[0,16,"BILL_TYPE"],[17,21,"EXPENSE"]]}],
+      ["water bill 700\r",{"entities":[[0,10,"BILL_TYPE"],[11,14,"EXPENSE"]]}],
+      ["internet bill 1200\r",{"entities":[[0,13,"BILL_TYPE"],[14,18,"EXPENSE"]]}],
+      ["phone bill 800\r",{"entities":[[0,10,"BILL_TYPE"],[11,14,"EXPENSE"]]}],
+      ["gas bill 1000\r",{"entities":[[0,8,"BILL_TYPE"],[9,13,"EXPENSE"]]}],
+      ["cable TV bill 600\r",{"entities":[[0,13,"BILL_TYPE"],[14,17,"EXPENSE"]]}],
+      ["garbage collection bill 300\r",{"entities":[[0,23,"BILL_TYPE"],[24,27,"EXPENSE"]]}],
+      ["home insurance premium 2500\r",{"entities":[[0,14,"BILL_TYPE"],[23,27,"EXPENSE"]]}],
+      ["property tax 1800\r",{"entities":[[0,12,"BILL_TYPE"],[13,17,"EXPENSE"]]}],
+      ["car insurance premium 3500\r",{"entities":[[0,13,"BILL_TYPE"],[22,26,"EXPENSE"]]}],
+      ["rent 15000\r",{"entities":[[0,4,"BILL_TYPE"],[5,10,"EXPENSE"]]}],
+      ["bills 7000\r",{"entities":[[0,5,"BILL_TYPE"],[6,10,"EXPENSE"]]}],
+      ["health insurance premium 2000\r",{"entities":[[0,24,"BILL_TYPE"],[25,29,"EXPENSE"]]}],
+      ["car loan installment 12500\r",{"entities":[[0,20,"BILL_TYPE"],[21,26,"EXPENSE"]]}],
+      ["mortgage 25000\r",{"entities":[[0,8,"BILL_TYPE"],[9,14,"EXPENSE"]]}],
+      ["bill 3000\r",{"entities":[[0,4,"BILL_TYPE"],[5,9,"EXPENSE"]]}],
+      ["car registration renewal 4000\r",{"entities":[[0,24,"BILL_TYPE"],[25,29,"EXPENSE"]]}],
+      ["credit card bill 7000\r",{"entities":[[0,16,"BILL_TYPE"],[17,21,"EXPENSE"]]}],
+      ["medical bills 5000\r",{"entities":[[0,13,"BILL_TYPE"],[14,18,"EXPENSE"]]}],
+      ["life insurance premium 3000\r",{"entities":[[0,22,"BILL_TYPE"],[23,27,"EXPENSE"]]}],
+      ["property tax 2000\r",{"entities":[[0,12,"BILL_TYPE"],[13,17,"EXPENSE"]]}],
+      ["income tax 50000\r",{"entities":[[0,10,"BILL_TYPE"],[11,16,"EXPENSE"]]}],
+      ["tax 50000\r",{"entities":[[0,3,"BILL_TYPE"],[4,9,"EXPENSE"]]}],
+      ["property tax 15000\r",{"entities":[[0,12,"BILL_TYPE"],[13,18,"EXPENSE"]]}],
+      ["sales tax 10000\r",{"entities":[[0,9,"BILL_TYPE"],[10,15,"EXPENSE"]]}],
+      ["vehicle tax 5000\r",{"entities":[[0,11,"BILL_TYPE"],[12,16,"EXPENSE"]]}],
+      ["excise tax 20000\r",{"entities":[[0,10,"BILL_TYPE"],[11,16,"EXPENSE"]]}],
+      ["property assessment tax 8000\r",{"entities":[[0,23,"BILL_TYPE"],[24,28,"EXPENSE"]]}],
+      ["goods and services tax 30000\r",{"entities":[[0,22,"BILL_TYPE"],[23,28,"EXPENSE"]]}],
+      ["import duty 25000\r",{"entities":[[0,11,"BILL_TYPE"],[12,17,"EXPENSE"]]}],
+      ["taxes 80000\r",{"entities":[[0,5,"BILL_TYPE"],[6,11,"EXPENSE"]]}],
+      ["property transfer tax 12000\r",{"entities":[[0,21,"BILL_TYPE"],[22,27,"EXPENSE"]]}],
+      ["value added tax 18000\r",{"entities":[[0,15,"BILL_TYPE"],[16,21,"EXPENSE"]]}],
+      ["professional tax 5000\r",{"entities":[[0,16,"BILL_TYPE"],[17,21,"EXPENSE"]]}],
+      ["local body tax 3000\r",{"entities":[[0,14,"BILL_TYPE"],[15,19,"EXPENSE"]]}],
+      ["customs duty 15000",{"entities":[[0,12,"BILL_TYPE"],[13,18,"EXPENSE"]]}]
     ]  
   }
