@@ -21,10 +21,6 @@
    ```bash
    conda install -c conda-forge cupy
    ```
-- **Install CuPy (for GPU support)**:
-   ```bash
-   conda install -c conda-forge cupy
-   ```
 - **Download SpaCy Language Model**:
    ```bash
    python -m spacy download en_core_web_sm
