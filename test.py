@@ -6,7 +6,7 @@ nlp1 = spacy.load(r".\output\model-best")
 while True:
     text = input("Enter: ")
 
-    if text.lower() == 'exit':
+    if text.lower() == 'bye':
         print("Exiting.")
         break
 

@@ -1,460 +1,1104 @@
-{"classes": ["EXPENSE", "SUBSCRIPTION_TYPE", "FOOD_ITEM", "TRAVEL_MODE", "TRAVEL_DESTINATION", "CLOTHING_TYPE", "BILL_TYPE", "FUEL_TYPE", "VEHICLE_TYPE"],
+{"classes": ["SUBSCRIPTION_TYPE", "FOOD_TYPE", "TRAVEL_DESTINATION", "CLOTHING_TYPE", "BILL_TYPE", "FUEL_TYPE", "VEHICLE_TYPE"],
     "annotations": [
-      ["Renewed my Netflix subscription for Rs 2000 this month\r", {"entities": [[11, 18, "SUBSCRIPTION_TYPE"], [38, 42, "EXPENSE"]]}],
-      ["Renewed my Amazon Prime membership for Rs 1500 this year\r",{"entities": [[11,23,"SUBSCRIPTION_TYPE"], [42,46,"EXPENSE"]]}],
-      ["Subscribed to HBO Max for Rs 500 per month\r",{"entities": [[14,21,"SUBSCRIPTION_TYPE"],[29,32,"EXPENSE"]]}],      
-      ["Renewed my Spotify Premium subscription for Rs 250 this month\r",{"entities": [[11,26,"SUBSCRIPTION_TYPE"],[47,50,"EXPENSE"]]}],      
-      ["Subscribed to Apple Music for Rs 200 per month\r",{"entities": [[14,25,"SUBSCRIPTION_TYPE"],[33,36,"EXPENSE"]]}],
-      ["Renewed my Disney Plus subscription for Rs 300 this month\r",{"entities": [[11,12,"SUBSCRIPTION_TYPE" ],[43,46,"EXPENSE"]]}],
-      ["Subscribed to YouTube Premium for Rs 400 per month\r",{ "entities": [[14,29,"SUBSCRIPTION_TYPE"],[37,40,"EXPENSE"]]}],
-      ["Renewed my Audible membership for Rs 1000 this year\r", {"entities": [[11,18,"SUBSCRIPTION_TYPE"],[37,41,"EXPENSE"]]}],
-      ["Renewed my Netflix subscription for Rs 2000 this month.\r", { "entities": [ [11, 18, "SUBSCRIPTION_TYPE"], [39, 43, "EXPENSE"] ] } ],
-      ["Renewed my Amazon Prime membership for Rs 1500 this year.\r", { "entities": [ [11, 23, "SUBSCRIPTION_TYPE"], [42, 46, "EXPENSE"] ] } ],
-      ["Subscribed to HBO Max for Rs 500 per month.\r", { "entities": [ [14, 21, "SUBSCRIPTION_TYPE"], [29, 32, "EXPENSE"] ] } ],
-      ["Renewed my Spotify Premium subscription for Rs 250 this month.\r", { "entities": [ [11, 26, "SUBSCRIPTION_TYPE"], [47, 50, "EXPENSE"] ] } ],
-      ["Subscribed to Apple Music for Rs 200 per month.\r", { "entities": [ [14, 25, "SUBSCRIPTION_TYPE"], [33, 36, "EXPENSE"] ] } ],
-      ["Renewed my Disney Plus subscription for Rs 300 this month.\r", { "entities": [ [11, 22, "SUBSCRIPTION_TYPE"], [43, 46, "EXPENSE"] ] } ],
-      ["Subscribed to YouTube Premium for Rs 400 per month.\r", { "entities": [ [14, 29, "SUBSCRIPTION_TYPE"], [37, 40, "EXPENSE"] ] } ],
-      ["Renewed my Audible membership for Rs 1000 this year.\r", { "entities": [ [11, 18, "SUBSCRIPTION_TYPE"], [37, 41, "EXPENSE"] ] } ],
-      ["Subscribed to Kindle Unlimited for Rs 300 per month.\r", { "entities": [ [14, 30, "SUBSCRIPTION_TYPE"], [38, 41, "EXPENSE"] ] } ],
-      ["Renewed my PlayStation Plus subscription for Rs 600 this month.\r", { "entities": [ [11, 27, "SUBSCRIPTION_TYPE"], [48, 51, "EXPENSE"] ] } ],
-      ["Subscribed to LinkedIn Premium for Rs 700 per month.\r", { "entities": [ [14, 30, "SUBSCRIPTION_TYPE"], [38, 41, "EXPENSE"] ] } ],
-      ["Renewed my Prime Video membership for Rs 1000 this year.\r", { "entities": [ [11, 22, "SUBSCRIPTION_TYPE"], [41, 45, "EXPENSE"] ] } ],
-      ["Renewed my Amazon membership for Rs 500 this month.\r", { "entities": [ [11, 17, "SUBSCRIPTION_TYPE"], [36, 39, "EXPENSE"] ] } ],
-      ["Renewed my Sony Liv subscription for Rs 300 this month.\r", { "entities": [ [11, 19, "SUBSCRIPTION_TYPE"], [40, 43, "EXPENSE"] ] } ],
-      ["Subscribed to Zee5 for Rs 250 per month.\r", { "entities": [ [14, 18, "SUBSCRIPTION_TYPE"], [26, 29, "EXPENSE"] ] } ],
-      ["Renewed my Hotstar subscription for Rs 500 this month.\r", { "entities": [ [11, 18, "SUBSCRIPTION_TYPE"], [39, 42, "EXPENSE"] ] } ],
-      ["Subscribed to Voot for Rs 150 per month.\r", { "entities": [ [14, 18, "SUBSCRIPTION_TYPE"], [26, 29, "EXPENSE"] ] } ],
-      ["Renewed my ALT Balaji subscription for Rs 100 this month.\r", { "entities": [ [11, 21, "SUBSCRIPTION_TYPE"], [42, 45, "EXPENSE"] ] } ],
-      ["Subscribed to Gaana Plus for Rs 99 per month.\r", { "entities": [ [14, 24, "SUBSCRIPTION_TYPE"], [32, 34, "EXPENSE"] ] } ],
-      ["Renewed my Eros Now subscription for Rs 200 this month.\r", { "entities": [ [11, 19, "SUBSCRIPTION_TYPE"], [40, 43, "EXPENSE"] ] } ],
-      ["Subscribed to JioSaavn Pro for Rs 299 per month.\r", { "entities": [ [14, 26, "SUBSCRIPTION_TYPE"], [34, 37, "EXPENSE"] ] } ],
-      ["Renewed my Sunnxt subscription for Rs 150 this month.\r", { "entities": [ [11, 17, "SUBSCRIPTION_TYPE"], [38, 41, "EXPENSE"] ] } ],
-      ["Subscribed to Letterboxd for Rs 399 per month.\r", { "entities": [ [14, 24, "SUBSCRIPTION_TYPE"], [32, 35, "EXPENSE"] ] } ],
-      ["Renewed my Aha subscription for Rs 249 this month.\r", { "entities": [ [11, 14, "SUBSCRIPTION_TYPE"], [35, 38, "EXPENSE"] ] } ],
-      ["Subscribed to MX Player for Rs 49 per month.\r", { "entities": [ [14, 23, "SUBSCRIPTION_TYPE"], [31, 33, "EXPENSE"] ] } ],
-      ["Renewed my Apple TV Plus subscription for Rs 499 this month.\r", { "entities": [ [11, 24, "SUBSCRIPTION_TYPE"], [45, 48, "EXPENSE"] ] } ],
-      ["Renewed my Paramount Plus subscription for Rs 599 this month.\r", { "entities": [ [11, 25, "SUBSCRIPTION_TYPE"], [46, 49, "EXPENSE"] ] } ],
-      ["Subscribed to Wynk Music for Rs 49 per month.\r", { "entities": [ [14, 24, "SUBSCRIPTION_TYPE"], [32, 34, "EXPENSE"] ] } ],
-      ["Renewed my Blinkit membership for Rs 299 this month.\r", { "entities": [ [11, 18, "SUBSCRIPTION_TYPE"], [37, 40, "EXPENSE"] ] } ],
-      ["Renewed my Zomato Gold membership for Rs 1500 this year.\r", { "entities": [ [11, 22, "SUBSCRIPTION_TYPE"], [41, 45, "EXPENSE"] ] } ],
-      ["Subscribed to Swiggy One for Rs 149 per month.\r", { "entities": [ [14, 24, "SUBSCRIPTION_TYPE"], [32, 35, "EXPENSE"] ] } ],
-      ["Subscribed to Netflix for Rs 1000 this year.\r", { "entities": [ [14, 21, "SUBSCRIPTION_TYPE"], [29, 33, "EXPENSE"] ] } ],
-      ["Renewed my Dineout Plus membership for Rs 999 this year.\r", { "entities": [ [11, 23, "SUBSCRIPTION_TYPE"], [42, 45, "EXPENSE"] ] } ],
-      ["Subscribed to Uber Eats for Rs 249 per month.\r", { "entities": [ [14, 23, "SUBSCRIPTION_TYPE"], [31, 34, "EXPENSE"] ] } ],
-      ["Renewed my Foodpanda membership for Rs 299 this year.\r", { "entities": [ [11, 20, "SUBSCRIPTION_TYPE"], [39, 42, "EXPENSE"] ] } ],
-      ["Renewed my Flipkart membership for Rs 999 this year.\r", { "entities": [ [11, 19, "SUBSCRIPTION_TYPE"], [38, 41, "EXPENSE"] ] } ],
-      ["Subscribed to Myntra for Rs 149 per month.\r", { "entities": [ [14, 20, "SUBSCRIPTION_TYPE"], [28, 31, "EXPENSE"] ] } ],
-      ["Renewed my Big Basket membership for Rs 299 this month.\r", { "entities": [ [11, 21, "SUBSCRIPTION_TYPE"], [40, 43, "EXPENSE"] ] } ],
-      ["Subscribed to Grofers for Rs 99 per month.\r", { "entities": [ [14, 21, "SUBSCRIPTION_TYPE"], [29, 31, "EXPENSE"] ] } ],
-      ["Renewed my Ola membership for Rs 299 this month.\r", { "entities": [ [11, 14, "SUBSCRIPTION_TYPE"], [33, 36, "EXPENSE"] ] } ],
-      ["Subscribed to Rapido for Rs 99 per month.\r", { "entities": [ [14, 20, "SUBSCRIPTION_TYPE"], [28, 30, "EXPENSE"] ] } ],
-      ["Subscribed to Ajio for Rs 1490 per month.\r", { "entities": [ [14, 18, "SUBSCRIPTION_TYPE"], [26, 30, "EXPENSE"] ] } ],
-      ["Google One for Rs 1999 per month.\r", { "entities": [ [0, 10, "SUBSCRIPTION_TYPE"], [18, 22, "EXPENSE"] ] } ],
-      ["Netflix for Rs 1000.\r", { "entities": [ [0, 7, "SUBSCRIPTION_TYPE"], [15, 19, "EXPENSE"] ] } ],
-      ["Amazon Prime for Rs 1500.\r", { "entities": [ [0, 12, "SUBSCRIPTION_TYPE"], [20, 24, "EXPENSE"] ] } ],
-      ["HBO Max for Rs 500.\r", { "entities": [ [0, 7, "SUBSCRIPTION_TYPE"], [15, 18, "EXPENSE"] ] } ],
-      ["Spotify for Rs 250.\r", { "entities": [ [0, 7, "SUBSCRIPTION_TYPE"], [15, 18, "EXPENSE"] ] } ],
-      ["Apple Music for Rs 200.\r", { "entities": [ [0, 11, "SUBSCRIPTION_TYPE"], [19, 22, "EXPENSE"] ] } ],
-      ["Disney Plus for Rs 300.\r", { "entities": [ [0, 11, "SUBSCRIPTION_TYPE"], [19, 22, "EXPENSE"] ] } ],
-      ["YouTube Premium for Rs 400.\r", { "entities": [ [0, 15, "SUBSCRIPTION_TYPE"], [23, 26, "EXPENSE"] ] } ],
-      ["Audible for Rs 1000.\r", { "entities": [ [0, 7, "SUBSCRIPTION_TYPE"], [15, 19, "EXPENSE"] ] } ],
-      ["Kindle Unlimited for Rs 300.\r", { "entities": [ [0, 16, "SUBSCRIPTION_TYPE"], [24, 27, "EXPENSE"] ] } ],
-      ["PlayStation Plus for Rs 600.\r", { "entities": [ [0, 16, "SUBSCRIPTION_TYPE"], [24, 27, "EXPENSE"] ] } ],
-      ["LinkedIn Premium for Rs 700.\r", { "entities": [ [0, 16, "SUBSCRIPTION_TYPE"], [24, 27, "EXPENSE"] ] } ],
-      ["Prime Video for Rs 1000.\r", { "entities": [ [0, 11, "SUBSCRIPTION_TYPE"], [19, 23, "EXPENSE"] ] } ],
-      ["Amazon for Rs 500.\r", { "entities": [ [0, 6, "SUBSCRIPTION_TYPE"], [14, 17, "EXPENSE"] ] } ],
-      ["Sony Liv for Rs 300.\r", { "entities": [ [0, 8, "SUBSCRIPTION_TYPE"], [16, 19, "EXPENSE"] ] } ],
-      ["Zee5 for Rs 250.\r", { "entities": [ [0, 4, "SUBSCRIPTION_TYPE"], [12, 15, "EXPENSE"] ] } ],
-      ["Hotstar for Rs 500.\r", { "entities": [ [0, 7, "SUBSCRIPTION_TYPE"], [15, 18, "EXPENSE"] ] } ],
-      ["Voot for Rs 150.\r", { "entities": [ [0, 4, "SUBSCRIPTION_TYPE"], [12, 15, "EXPENSE"] ] } ],
-      ["ALT Balaji for Rs 100.\r", { "entities": [ [0, 10, "SUBSCRIPTION_TYPE"], [18, 21, "EXPENSE"] ] } ],
-      ["Gaana Plus for Rs 99.\r", { "entities": [ [0, 10, "SUBSCRIPTION_TYPE"], [18, 20, "EXPENSE"] ] } ],
-      ["Eros Now for Rs 200.\r", { "entities": [ [0, 8, "SUBSCRIPTION_TYPE"], [16, 19, "EXPENSE"] ] } ],
-      ["JioSaavn Pro for Rs 299.\r", { "entities": [ [0, 12, "SUBSCRIPTION_TYPE"], [20, 23, "EXPENSE"] ] } ],
-      ["Sunnxt for Rs 150.\r", { "entities": [ [0, 6, "SUBSCRIPTION_TYPE"], [14, 17, "EXPENSE"] ] } ],
-      ["Letterboxd for Rs 399.\r", { "entities": [ [0, 10, "SUBSCRIPTION_TYPE"], [18, 21, "EXPENSE"] ] } ],
-      ["Aha for Rs 249.\r", { "entities": [ [0, 3, "SUBSCRIPTION_TYPE"], [11, 14, "EXPENSE"] ] } ],
-      ["MX Player for Rs 49.\r", { "entities": [ [0, 9, "SUBSCRIPTION_TYPE"], [17, 19, "EXPENSE"] ] } ],
-      ["Apple TV Plus for Rs 499.\r", { "entities": [ [0, 13, "SUBSCRIPTION_TYPE"], [21, 24, "EXPENSE"] ] } ],
-      ["Paramount Plus for Rs 599.\r", { "entities": [ [0, 14, "SUBSCRIPTION_TYPE"], [22, 25, "EXPENSE"] ] } ],
-      ["Wynk Music for Rs 49.\r", { "entities": [ [0, 10, "SUBSCRIPTION_TYPE"], [18, 20, "EXPENSE"] ] } ],
-      ["Blinkit for Rs 299.\r", { "entities": [ [0, 7, "SUBSCRIPTION_TYPE"], [15, 18, "EXPENSE"] ] } ],
-      ["Zomato Gold for Rs 1500.\r", { "entities": [ [0, 11, "SUBSCRIPTION_TYPE"], [19, 23, "EXPENSE"] ] } ],
-      ["Swiggy One for Rs 149.\r", { "entities": [ [0, 10, "SUBSCRIPTION_TYPE"], [18, 21, "EXPENSE"] ] } ],
-      ["Dineout Plus for Rs 999.\r", { "entities": [ [0, 12, "SUBSCRIPTION_TYPE"], [20, 23, "EXPENSE"] ] } ],
-      ["Uber Eats for Rs 249.\r", { "entities": [ [0, 9, "SUBSCRIPTION_TYPE"], [17, 20, "EXPENSE"] ] } ],
-      ["Foodpanda for Rs 299.\r", { "entities": [ [0, 9, "SUBSCRIPTION_TYPE"], [17, 20, "EXPENSE"] ] } ],
-      ["Flipkart for Rs 999.\r", { "entities": [ [0, 8, "SUBSCRIPTION_TYPE"], [16, 19, "EXPENSE"] ] } ],
-      ["Myntra for Rs 149.\r", { "entities": [ [0, 6, "SUBSCRIPTION_TYPE"], [14, 17, "EXPENSE"] ] } ],
-      ["Big Basket for Rs 299.\r", { "entities": [ [0, 10, "SUBSCRIPTION_TYPE"], [18, 21, "EXPENSE"] ] } ],
-      ["Grofers for Rs 99.\r", { "entities": [ [0, 7, "SUBSCRIPTION_TYPE"], [15, 17, "EXPENSE"] ] } ],
-      ["Ola for Rs 299.\r", { "entities": [ [0, 3, "SUBSCRIPTION_TYPE"], [11, 14, "EXPENSE"] ] } ],
-      ["Rapido for Rs 99.\r", { "entities": [ [0, 6, "SUBSCRIPTION_TYPE"], [14, 16, "EXPENSE"] ] } ],
-      ["Ajio for Rs 1490.\r", { "entities": [ [0, 4, "SUBSCRIPTION_TYPE"], [12, 16, "EXPENSE"] ] } ],
-      ["Google One for Rs 1999.\r", { "entities": [ [0, 10, "SUBSCRIPTION_TYPE"], [18, 22, "EXPENSE"] ] } ],
-      ["Netflix 1200\r", { "entities": [ [0, 7, "SUBSCRIPTION_TYPE"], [8, 12, "EXPENSE"] ] } ],
-      ["Amazon Prime 2500\r", { "entities": [ [0, 12, "SUBSCRIPTION_TYPE"], [13, 17, "EXPENSE"] ] } ],
-      ["Spotify 300\r", { "entities": [ [0, 7, "SUBSCRIPTION_TYPE"], [8, 11, "EXPENSE"] ] } ],
-      ["Disney Plus 400\r", { "entities": [ [0, 11, "SUBSCRIPTION_TYPE"], [12, 15, "EXPENSE"] ] } ],
-      ["YouTube Premium 750\r", { "entities": [ [0, 15, "SUBSCRIPTION_TYPE"], [16, 19, "EXPENSE"] ] } ],
-      ["Audible 1100\r", { "entities": [ [0, 7, "SUBSCRIPTION_TYPE"], [8, 12, "EXPENSE"] ] } ],
-      ["LinkedIn Premium 800\r", { "entities": [ [0, 16, "SUBSCRIPTION_TYPE"], [17, 20, "EXPENSE"] ] } ],
-      ["Zee5 350\r", { "entities": [ [0, 4, "SUBSCRIPTION_TYPE"], [5, 8, "EXPENSE"] ] } ],
-      ["Hotstar 600\r", { "entities": [ [0, 7, "SUBSCRIPTION_TYPE"], [8, 11, "EXPENSE"] ] } ],
-      ["Apple Music 350\r", { "entities": [ [0, 11, "SUBSCRIPTION_TYPE"], [12, 15, "EXPENSE"] ] } ],
-      ["Sony Liv 500\r", { "entities": [ [0, 8, "SUBSCRIPTION_TYPE"], [9, 12, "EXPENSE"] ] } ],
-      ["PlayStation Plus 900\r", { "entities": [ [0, 16, "SUBSCRIPTION_TYPE"], [17, 20, "EXPENSE"] ] } ],
-      ["Kindle Unlimited 400\r", { "entities": [ [0, 16, "SUBSCRIPTION_TYPE"], [17, 20, "EXPENSE"] ] } ],
-      ["Prime Video 1200\r", { "entities": [ [0, 11, "SUBSCRIPTION_TYPE"], [12, 16, "EXPENSE"] ] } ],
-      ["JioSaavn Pro 350\r", { "entities": [ [0, 12, "SUBSCRIPTION_TYPE"], [13, 16, "EXPENSE"] ] } ],
-      ["Aha 1500\r", { "entities": [ [0, 3, "SUBSCRIPTION_TYPE"], [4, 8, "EXPENSE"] ] } ],
-      ["Paramount Plus 700\r", { "entities": [ [0, 14, "SUBSCRIPTION_TYPE"], [15, 18, "EXPENSE"] ] } ],
-      ["Apple TV Plus 600\r", { "entities": [ [0, 13, "SUBSCRIPTION_TYPE"], [14, 17, "EXPENSE"] ] } ],
-      ["MX Player 499\r", { "entities": [ [0, 9, "SUBSCRIPTION_TYPE"], [10, 13, "EXPENSE"] ] } ],
-      ["Dineout Plus 1200\r", { "entities": [ [0, 12, "SUBSCRIPTION_TYPE"], [13, 17, "EXPENSE"] ] } ],
-      ["ALT Balaji 200\r", { "entities": [ [0, 10, "SUBSCRIPTION_TYPE"], [11, 14, "EXPENSE"] ] } ],
-      ["Gaana Plus 199\r", { "entities": [ [0, 10, "SUBSCRIPTION_TYPE"], [11, 14, "EXPENSE"] ] } ],
-      ["Flipkart 800\r", { "entities": [ [0, 8, "SUBSCRIPTION_TYPE"], [9, 12, "EXPENSE"] ] } ],
-      ["Blinkit 300", { "entities": [ [0, 7, "SUBSCRIPTION_TYPE"], [8, 11, "EXPENSE"] ] } ],
-
-      
-      
-      ["I spent Rs 110 on chicken burger today\r",{"entities":[[11,14,"EXPENSE"],[18,32,"FOOD_ITEM"]]}],
-      ["Today's snack was Rs 10 for banana.\r",{"entities":[[21,23,"EXPENSE"],[28,34,"FOOD_ITEM"]]}],
-      ["Dinner cost me Rs 300 for a delicious pizza.\r",{"entities":[[18,21,"EXPENSE"],[28,43,"FOOD_ITEM"]]}],
-      ["Chicken Biryani set me back Rs 200.\r",{"entities":[[0,15,"FOOD_ITEM"],[28,34,"EXPENSE"]]}],
-      ["I indulged in Rs 100 worth of chicken biryani.\r",{"entities":[[17,20,"EXPENSE"],[30,45,"FOOD_ITEM"]]}],
-      ["Burger and fries totaled Rs 150 for lunch.\r",{"entities":[[0,6,"FOOD_ITEM"],[11,16,"FOOD_ITEM"],[28,31,"EXPENSE"]]}],
-      ["Ice cream in the evening cost Rs 50.\r",{"entities":[[0,9,"FOOD_ITEM"],[33,35,"EXPENSE"]]}],
-      ["Sushi dinner expense was Rs 250.\r",{"entities":[[0,5,"FOOD_ITEM"],[28,31,"EXPENSE"]]}],
-      ["Grabbed a quick sandwich for Rs 80 during break.\r",{"entities":[[10,24,"FOOD_ITEM"],[32,34,"EXPENSE"]]}],
-      ["Coffee from the cafe cost Rs 30.\r",{"entities":[[0,6,"FOOD_ITEM"],[29,31,"EXPENSE"]]}],
-      ["Rs 110 chicken burger\r",{"entities":[[3,6,"EXPENSE"],[7,21,"FOOD_ITEM"]]}],
-      ["Rs 10 banana\r",{"entities":[[3,5,"EXPENSE"],[6,12,"FOOD_ITEM"]]}],
-      ["Rs 300 pizza\r",{"entities":[[3,6,"EXPENSE"],[7,12,"FOOD_ITEM"]]}],
-      ["Rs 200 Chicken Biryani\r",{"entities":[[3,6,"EXPENSE"],[7,22,"FOOD_ITEM"]]}],
-      ["Rs 100 chicken biryani\r",{"entities":[[3,6,"EXPENSE"],[7,22,"FOOD_ITEM"]]}],
-      ["Rs 150 Burger and fries\r",{"entities":[[3,6,"EXPENSE"],[7,13,"FOOD_ITEM"],[18,23,"FOOD_ITEM"]]}],
-      ["Rs 50 Ice cream\r",{"entities":[[3,5,"EXPENSE"],[6,15,"FOOD_ITEM"]]}],
-      ["Rs 250 Sushi\r",{"entities":[[3,6,"EXPENSE"],[7,12,"FOOD_ITEM"]]}],
-      ["Rs 80 sandwich\r",{"entities":[[3,5,"EXPENSE"],[6,14,"FOOD_ITEM"]]}],
-      ["Rs 30 Coffee\r",{"entities":[[3,5,"EXPENSE"],[6,12,"FOOD_ITEM"]]}],
-      
-
-
-      ["Took a Rs 110 bus ride today.\r",{"entities":[[10,13,"EXPENSE"],[14,17,"TRAVEL_MODE"]]}],
-      ["Just spent Rs 10 on the metro.\r",{"entities":[[14,16,"EXPENSE"],[24,29,"TRAVEL_MODE"]]}],
-      ["Hopped into a taxi the ride cost me Rs 300.\r",{"entities":[[14,18,"TRAVEL_MODE"],[39,42,"EXPENSE"]]}],
-      ["Used the bus again; this time, it was Rs 200.\r",{"entities":[[9,12,"TRAVEL_MODE"],[41,44,"EXPENSE"]]}],
-      ["Spent Rs 100 for the metro.\r",{"entities":[[9,12,"EXPENSE"],[21,26,"TRAVEL_MODE"]]}],
-      ["Combining bus and metro set me back Rs 150 for travel.\r",{"entities":[[10,13,"TRAVEL_MODE"],[18,23,"TRAVEL_MODE"],[39,42,"EXPENSE"]]}],
-      ["Had a trip to Goa - expenses totaled Rs 5000.\r",{"entities":[[14,17,"TRAVEL_DESTINATION"],[40,44,"EXPENSE"]]}],
-      ["Opted for a Plane to London - the cost was Rs 25000.\r",{"entities":[[12,17,"TRAVEL_MODE"],[21,27,"TRAVEL_DESTINATION"],[45,51,"EXPENSE"]]}],
-      ["Traveled by train to Paris - spent Rs 4800.\r",{"entities":[[12,17,"TRAVEL_MODE"],[21,26,"TRAVEL_DESTINATION"],[38,42,"EXPENSE"]]}],
-      ["Quick auto-rickshaw ride in the city - just Rs 50.\r",{"entities":[[6,19,"TRAVEL_MODE"],[47,49,"EXPENSE"]]}],
-      ["Took the scooter for a short ride - expenses were Rs 20.\r",{"entities":[[9,16,"TRAVEL_MODE"],[53,55,"EXPENSE"]]}],
-      ["Weekend getaway to the Hill Station - spent Rs 800 on travel.\r",{"entities":[[23,35,"TRAVEL_DESTINATION"],[47,50,"EXPENSE"]]}],
-      ["Went on a cruise vacation to Maldives - expenses reached Rs 15000.\r",{"entities":[[10,16,"TRAVEL_MODE"],[29,37,"TRAVEL_DESTINATION"],[60,65,"EXPENSE"]]}],
-      ["Took a bicycle ride around the city - cost me only Rs 5.\r",{"entities":[[7,14,"TRAVEL_MODE"],[54,55,"EXPENSE"]]}],
-      ["Post-shopping rickshaw ride - spent Rs 30.\r",{"entities":[[14,22,"TRAVEL_MODE"],[39,41,"EXPENSE"]]}],
-      ["Enjoyed a road trip to the Mountains - expenses were Rs 2500 for fuel and tolls.\r",{"entities":[[27,36,"TRAVEL_DESTINATION"],[56,60,"EXPENSE"]]}],
-      ["Rented an electric scooter for the day - cost Rs 100.\r",{"entities":[[10,26,"TRAVEL_MODE"],[49,52,"EXPENSE"]]}],
-      ["Rs 110 bus\r",{"entities":[[3,6,"EXPENSE"],[7,10,"TRAVEL_MODE"]]}],
-      ["Rs 10 metro\r",{"entities":[[3,5,"EXPENSE"],[6,11,"TRAVEL_MODE"]]}],
-      ["Rs 300 taxi\r",{"entities":[[3,6,"EXPENSE"],[7,11,"TRAVEL_MODE"]]}],
-      ["Rs 200 bus\r",{"entities":[[3,6,"EXPENSE"],[7,10,"TRAVEL_MODE"]]}],
-      ["Rs 100 metro\r",{"entities":[[3,6,"EXPENSE"],[7,12,"TRAVEL_MODE"]]}],
-      ["Rs 150 bus and metro\r",{"entities":[[3,6,"EXPENSE"],[7,10,"TRAVEL_MODE"],[15,20,"TRAVEL_MODE"]]}],
-      ["Rs 5000 Goa trip\r",{"entities":[[3,7,"EXPENSE"],[8,11,"TRAVEL_DESTINATION"]]}],
-      ["Rs 25000 Plane to London\r",{"entities":[[3,8,"EXPENSE"],[9,14,"TRAVEL_MODE"],[18,24,"TRAVEL_DESTINATION"]]}],
-      ["Rs 4800 train to Paris\r",{"entities":[[3,7,"EXPENSE"],[8,13,"TRAVEL_MODE"],[17,22,"TRAVEL_DESTINATION"]]}],
-      ["Rs 50 auto-rickshaw\r",{"entities":[[3,5,"EXPENSE"],[6,19,"TRAVEL_DESTINATION"]]}],
-      ["Rs 20 scooter\r",{"entities":[[3,5,"EXPENSE"],[6,13,"TRAVEL_MODE"]]}],
-      ["Rs 800 Hill Station getaway\r",{"entities":[[3,6,"EXPENSE"],[7,19,"TRAVEL_DESTINATION"]]}],
-      ["Rs 15000 cruise to Maldives\r",{"entities":[[3,8,"EXPENSE"],[9,15,"TRAVEL_MODE"],[19,27,"TRAVEL_DESTINATION"]]}],
-      ["Rs 5 bicycle\r",{"entities":[[3,4,"TRAVEL_DESTINATION"],[5,12,"TRAVEL_MODE"]]}],["Rs 30 rickshaw\r",{"entities":[[3,5,"EXPENSE"],[6,14,"TRAVEL_MODE"]]}],
-      ["Rs 2500 road trip to Mountains\r",{"entities":[[3,7,"EXPENSE"],[21,30,"TRAVEL_DESTINATION"]]}],
-      ["Rs 100 electric scooter rental",{"entities":[[3,6,"EXPENSE"],[7,23,"TRAVEL_MODE"]]}],
-
-
-
-      ["I bought a Rs 700 shirt yesterday.\r",{"entities":[[14,17,"EXPENSE"],[18,23,"CLOTHING_TYPE"]]}],
-      ["Just purchased a Rs 450 pair of jeans.\r",{"entities":[[20,23,"EXPENSE"],[32,37,"CLOTHING_TYPE"]]}],
-      ["Bought a Rs 800 dress for the upcoming event.\r",{"entities":[[12,15,"EXPENSE"],[16,21,"CLOTHING_TYPE"]]}],
-      ["Got myself a Rs 300 hoodie to stay warm this winter.\r",{"entities":[[16,19,"EXPENSE"],[20,26,"CLOTHING_TYPE"]]}],
-      ["Spent Rs 2500 on a set of formal suits.\r",{"entities":[[9,13,"EXPENSE"],[26,38,"CLOTHING_TYPE"]]}],
-      ["Purchased a Rs 150 tie to match with my new shirt.\r",{"entities":[[15,18,"EXPENSE"],[19,22,"CLOTHING_TYPE"]]}],
-      ["Just got a Rs 350 skirt for the summer season.\r",{"entities":[[14,17,"EXPENSE"],[18,23,"CLOTHING_TYPE"]]}],
-      ["Bought a Rs 600 jacket for outdoor activities.\r",{"entities":[[12,15,"EXPENSE"],[16,22,"CLOTHING_TYPE"]]}],
-      ["Splurged on a Rs 2000 saree for the family function.\r",{"entities":[[17,21,"EXPENSE"],[22,27,"CLOTHING_TYPE"]]}],
-      ["Just picked up a Rs 100 pair of socks.\r",{"entities":[[20,23,"EXPENSE"],[32,37,"CLOTHING_TYPE"]]}],
-      ["Invested in a Rs 1200 leather jacket for the winter.\r",{"entities":[[17,21,"EXPENSE"],[22,36,"CLOTHING_TYPE"]]}],
-      ["Bought some Rs 50 underwear from the local store.\r",{"entities":[[15,17,"EXPENSE"],[18,27,"CLOTHING_TYPE"]]}],
-      ["Just grabbed a Rs 700 pair of sneakers for jogging.\r",{"entities":[[18,21,"EXPENSE"],[30,38,"CLOTHING_TYPE"]]}],
-      ["Spent Rs 900 on a pair of boots for the hiking trip.\r",{"entities":[[9,12,"EXPENSE"],[26,31,"CLOTHING_TYPE"]]}],
-      ["Got a Rs 180 t-shirt for casual wear.\r",{"entities":[[9,12,"EXPENSE"],[13,20,"CLOTHING_TYPE"]]}],
-      ["Just got a Rs 400 kurta for the festive season.\r",{"entities":[[14,17,"EXPENSE"],[18,23,"CLOTHING_TYPE"]]}],
-      ["Just snagged a Rs 550 sweatshirt for those chilly evenings.\r",{"entities":[[18,21,"EXPENSE"],[22,32,"CLOTHING_TYPE"]]}],
-      ["Bought a few clothes for Rs 5600.\r",{"entities":[[13,20,"CLOTHING_TYPE"],[28,32,"EXPENSE"]]}],
-      ["Picked up an Rs 850 oversized hoodie for ultimate comfort.\r",{"entities":[[16,19,"EXPENSE"],[20,36,"CLOTHING_TYPE"]]}],
-      ["Scored a killer deal on a Rs 1200 coat for the winter season.\r",{"entities":[[29,33,"EXPENSE"],[34,38,"CLOTHING_TYPE"]]}],
-      ["Splurged on a Rs 2000 suit for the upcoming wedding.\r",{"entities":[[17,21,"EXPENSE"],[22,26,"CLOTHING_TYPE"]]}],
-      ["Just invested in a Rs 1800 coatsuit for a stylish ensemble.\r",{"entities":[[22,26,"EXPENSE"],[27,35,"CLOTHING_TYPE"]]}],
-      ["Snagged a Rs 400 pair of cargo pants for a rugged look.\r",{"entities":[[13,16,"EXPENSE"],[25,36,"CLOTHING_TYPE"]]}],
-      ["Added a Rs 650 leather coat to my collection.\r",{"entities":[[11,14,"EXPENSE"],[15,27,"CLOTHING_TYPE"]]}],
-      ["Couldn't resist buying a Rs 300 denim jacket for the cool vibes.\r",{"entities":[[28,31,"EXPENSE"],[32,44,"CLOTHING_TYPE"]]}],
-      ["Spent Rs 700 on a sleek blazer for formal occasions.\r",{"entities":[[9,12,"EXPENSE"],[24,30,"CLOTHING_TYPE"]]}],
-      ["Spent Rs 10000 on clothing.\r",{"entities":[[9,14,"EXPENSE"],[18,26,"CLOTHING_TYPE"]]}],
-      ["Just grabbed a Rs 250 pair of shorts for the summer heat.\r",{"entities":[[18,21,"EXPENSE"],[30,36,"CLOTHING_TYPE"]]}],
-      ["Got myself a Rs 900 woolen sweater for the mountain getaway.\r",{"entities":[[16,19,"EXPENSE"],[20,34,"CLOTHING_TYPE"]]}],
-      ["Invested in a Rs 1500 cashmere scarf to stay cozy.\r",{"entities":[[17,21,"EXPENSE"],[22,36,"CLOTHING_TYPE"]]}],
-      ["Added a Rs 350 beanie to my winter accessories.\r",{"entities":[[11,14,"EXPENSE"],[15,21,"CLOTHING_TYPE"]]}],
-      ["Just got a Rs 200 pair of sandals for casual outings.\r",{"entities":[[14,17,"EXPENSE"],[26,33,"CLOTHING_TYPE"]]}],
-      ["Picked up a Rs 600 flannel shirt for a rustic look.\r",{"entities":[[15,18,"EXPENSE"],[19,32,"CLOTHING_TYPE"]]}],
-      ["Just snagged a Rs 550 kurta-pajama for the festive occasion.\r",{"entities":[[18,21,"EXPENSE"],[22,34,"CLOTHING_TYPE"]]}],
-      ["Scored a killer deal on a Rs 1200 sari for the family gathering.\r",{"entities":[[29,33,"EXPENSE"],[34,38,"CLOTHING_TYPE"]]}],
-      ["Picked up a Rs 850 lungi for those hot summer days.\r",{"entities":[[15,18,"EXPENSE"],[19,24,"CLOTHING_TYPE"]]}],
-      ["Splurged on a Rs 2000 sherwani for the wedding ceremony.\r",{"entities":[[17,21,"EXPENSE"],[22,31,"CLOTHING_TYPE"]]}],
-      ["Just invested in a Rs 1800 dhoti for traditional wear.\r",{"entities":[[22,26,"EXPENSE"],[27,32,"CLOTHING_TYPE"]]}],
-      ["Snagged a Rs 400 pair of flip-flops for the beach vacation.\r",{"entities":[[13,16,"EXPENSE"],[25,35,"CLOTHING_TYPE"]]}],
-      ["Added a Rs 650 cotton saree to my collection.\r",{"entities":[[11,14,"EXPENSE"],[15,27,"CLOTHING_TYPE"]]}],
-      ["Couldn't resist buying a Rs 300 khadi kurta for casual outings.\r",{"entities":[[28,31,"EXPENSE"],[32,43,"CLOTHING_TYPE"]]}],
-      ["Just grabbed a Rs 250 pair of chappals for everyday wear.\r",{"entities":[[18,21,"EXPENSE"],[30,38,"CLOTHING_TYPE"]]}],
-      ["Got myself a Rs 900 salwar kameez for special occasions.\r",{"entities":[[16,19,"EXPENSE"],[20,33,"CLOTHING_TYPE"]]}],
-      ["Invested in a Rs 1500 pashmina shawl to stay cozy.\r",{"entities":[[17,21,"EXPENSE"],[22,36,"CLOTHING_TYPE"]]}],
-      ["Invested in a Rs 50 vest for luxurious comfort.\r",{"entities":[[17,19,"EXPENSE"],[20,24,"CLOTHING_TYPE"]]}],
-      ["Added a Rs 350 bandhani dupatta to my ethnic collection.\r",{"entities":[[11,14,"EXPENSE"],[15,31,"CLOTHING_TYPE"]]}],
-      ["Just got a Rs 200 pair of mojris for the traditional touch.\r",{"entities":[[14,17,"EXPENSE"],[26,32,"CLOTHING_TYPE"]]}],
-      ["Picked up a Rs 600 pant saree for modern elegance.\r",{"entities":[[15,18,"EXPENSE"],[19,29,"CLOTHING_TYPE"]]}],
-      ["Just grabbed a Rs 150 pack of boxers for lounging around.\r",{"entities":[[18,21,"EXPENSE"],[30,36,"CLOTHING_TYPE"]]}],
-      ["Got myself a Rs 200 pair of panties for everyday comfort.\r",{"entities":[[16,19,"EXPENSE"],[28,35,"CLOTHING_TYPE"]]}],
-      ["Invested in some Rs 500 undies for comfort.\r",{"entities":[[20,23,"EXPENSE"],[24,30,"CLOTHING_TYPE"]]}],
-      ["Invested in some Rs 300 lingerie for special occasions.\r",{"entities":[[20,23,"EXPENSE"],[24,32,"CLOTHING_TYPE"]]}],
-      ["Picked up a Rs 250 set of briefs for gym sessions.\r",{"entities":[[15,18,"EXPENSE"],[26,32,"CLOTHING_TYPE"]]}],
-      ["Added a Rs 180 bralette to my collection.\r",{"entities":[[11,14,"EXPENSE"],[15,23,"CLOTHING_TYPE"]]}],
-      ["Just got a Rs 350 set of thermal underwear for winter outings.\r",{"entities":[[14,17,"EXPENSE"],[25,42,"CLOTHING_TYPE"]]}],
-      ["Picked up some Rs 120 cotton briefs for everyday wear.\r",{"entities":[[18,21,"EXPENSE"],[22,35,"CLOTHING_TYPE"]]}],
-      ["Got a Rs 180 set of lace panties for added flair.\r",{"entities":[[9,12,"EXPENSE"],[20,32,"CLOTHING_TYPE"]]}],
-      ["Invested in a Rs 200 pair of silk boxers for luxurious comfort.\r",{"entities":[[17,20,"EXPENSE"],[29,40,"CLOTHING_TYPE"]]}],
-      ["Just got a Rs 150 pair of seamless underwear for no-show confidence.\r",{"entities":[[14,17,"EXPENSE"],[26,44,"CLOTHING_TYPE"]]}],
-      ["Rs 700 shirt\r",{"entities":[[3,6,"EXPENSE"],[7,12,"CLOTHING_TYPE"]]}],
-      ["Rs 450 pair of jeans\r",{"entities":[[3,6,"EXPENSE"],[15,20,"CLOTHING_TYPE"]]}],
-      ["Rs 800 dress\r",{"entities":[[3,6,"EXPENSE"],[7,12,"CLOTHING_TYPE"]]}],
-      ["Rs 300 hoodie\r",{"entities":[[3,6,"EXPENSE"],[7,13,"CLOTHING_TYPE"]]}],
-      ["Rs 2500 formal suits\r",{"entities":[[3,7,"EXPENSE"],[8,20,"CLOTHING_TYPE"]]}],
-      ["Rs 150 tie\r",{"entities":[[3,6,"EXPENSE"],[7,10,"CLOTHING_TYPE"]]}],
-      ["Rs 350 skirt\r",{"entities":[[3,6,"EXPENSE"],[7,12,"CLOTHING_TYPE"]]}],
-      ["Rs 600 jacket\r",{"entities":[[3,6,"EXPENSE"],[7,13,"CLOTHING_TYPE"]]}],
-      ["Rs 2000 saree\r",{"entities":[[3,7,"EXPENSE"],[8,13,"CLOTHING_TYPE"]]}],
-      ["Rs 100 pair of socks\r",{"entities":[[3,6,"EXPENSE"],[15,20,"CLOTHING_TYPE"]]}],
-      ["Rs 1200 leather jacket\r",{"entities":[[3,7,"EXPENSE"],[8,22,"CLOTHING_TYPE"]]}],
-      ["Rs 50 underwear\r",{"entities":[[3,5,"EXPENSE"],[6,15,"CLOTHING_TYPE"]]}],
-      ["Rs 700 pair of sneakers\r",{"entities":[[3,6,"EXPENSE"],[15,23,"CLOTHING_TYPE"]]}],
-      ["Rs 900 pair of boots\r",{"entities":[[3,6,"EXPENSE"],[15,20,"CLOTHING_TYPE"]]}],
-      ["Rs 180 t-shirt\r",{"entities":[[3,6,"EXPENSE"],[7,14,"CLOTHING_TYPE"]]}],
-      ["Rs 400 kurta\r",{"entities":[[3,6,"EXPENSE"],[7,12,"CLOTHING_TYPE"]]}],
-      ["Rs 550 sweatshirt\r",{"entities":[[3,6,"EXPENSE"],[7,17,"CLOTHING_TYPE"]]}],
-      ["Rs 5600 clothes\r",{"entities":[[3,7,"EXPENSE"],[8,15,"CLOTHING_TYPE"]]}],
-      ["Rs 850 oversized hoodie\r",{"entities":[[3,6,"EXPENSE"],[7,23,"CLOTHING_TYPE"]]}],
-      ["Rs 1200 coat\r",{"entities":[[3,7,"EXPENSE"],[8,12,"CLOTHING_TYPE"]]}],
-      ["Rs 2000 suit\r",{"entities":[[3,7,"EXPENSE"],[8,12,"CLOTHING_TYPE"]]}],
-      ["Rs 1800 coatsuit\r",{"entities":[[3,7,"EXPENSE"],[8,16,"CLOTHING_TYPE"]]}],
-      ["Rs 400 pair of cargo pants\r",{"entities":[[3,6,"EXPENSE"],[15,26,"CLOTHING_TYPE"]]}],
-      ["Rs 650 leather coat\r",{"entities":[[3,6,"EXPENSE"],[7,19,"CLOTHING_TYPE"]]}],
-      ["Rs 300 denim jacket\r",{"entities":[[3,6,"EXPENSE"],[7,19,"CLOTHING_TYPE"]]}],
-      ["Rs 700 blazer\r",{"entities":[[3,6,"EXPENSE"],[7,13,"CLOTHING_TYPE"]]}],
-      ["Rs 10000 clothing\r",{"entities":[[3,8,"EXPENSE"],[9,17,"CLOTHING_TYPE"]]}],
-      ["Rs 250 pair of shorts\r",{"entities":[[3,6,"EXPENSE"],[15,21,"CLOTHING_TYPE"]]}],
-      ["Rs 900 woolen sweater\r",{"entities":[[3,6,"EXPENSE"],[7,21,"CLOTHING_TYPE"]]}],
-      ["Rs 1500 cashmere scarf\r",{"entities":[[3,7,"EXPENSE"],[8,22,"CLOTHING_TYPE"]]}],
-      ["Rs 350 beanie\r",{"entities":[[3,6,"EXPENSE"],[7,13,"CLOTHING_TYPE"]]}],
-      ["Rs 200 pair of sandals\r",{"entities":[[3,6,"EXPENSE"],[15,22,"CLOTHING_TYPE"]]}],
-      ["Rs 600 flannel shirt\r",{"entities":[[3,6,"EXPENSE"],[7,20,"CLOTHING_TYPE"]]}],
-      ["Rs 550 kurta-pajama\r",{"entities":[[3,6,"EXPENSE"],[7,19,"CLOTHING_TYPE"]]}],
-      ["Rs 1200 sari\r",{"entities":[[3,7,"EXPENSE"],[8,12,"CLOTHING_TYPE"]]}],
-      ["Rs 850 lungi\r",{"entities":[[3,6,"EXPENSE"],[7,12,"CLOTHING_TYPE"]]}],
-      ["Rs 2000 sherwani\r",{"entities":[[3,7,"EXPENSE"],[8,16,"CLOTHING_TYPE"]]}],
-      ["Rs 1800 dhoti\r",{"entities":[[3,7,"EXPENSE"],[8,13,"CLOTHING_TYPE"]]}],
-      ["Rs 400 pair of flip-flops\r",{"entities":[[3,6,"EXPENSE"],[15,25,"CLOTHING_TYPE"]]}],
-      ["Rs 650 cotton saree\r",{"entities":[[3,6,"EXPENSE"],[7,19,"CLOTHING_TYPE"]]}],
-      ["Rs 300 khadi kurta\r",{"entities":[[3,6,"EXPENSE"],[7,18,"CLOTHING_TYPE"]]}],
-      ["Rs 250 pair of chappals\r",{"entities":[[3,6,"EXPENSE"],[15,23,"CLOTHING_TYPE"]]}],
-      ["Rs 900 salwar kameez\r",{"entities":[[3,6,"EXPENSE"],[7,20,"CLOTHING_TYPE"]]}],
-      ["Rs 1500 pashmina shawl\r",{"entities":[[3,7,"EXPENSE"],[8,22,"CLOTHING_TYPE"]]}],
-      ["Rs 50 vest\r",{"entities":[[3,5,"EXPENSE"],[6,10,"CLOTHING_TYPE"]]}],
-      ["Rs 350 bandhani dupatta\r",{"entities":[[3,6,"EXPENSE"],[7,23,"CLOTHING_TYPE"]]}],
-      ["Rs 200 pair of mojris\r",{"entities":[[3,6,"EXPENSE"],[15,21,"CLOTHING_TYPE"]]}],
-      ["Rs 600 pant saree\r",{"entities":[[3,6,"EXPENSE"],[7,17,"CLOTHING_TYPE"]]}],
-      ["Rs 150 pack of boxers\r",{"entities":[[3,6,"EXPENSE"],[15,21,"CLOTHING_TYPE"]]}],
-      ["Rs 200 pair of panties\r",{"entities":[[3,6,"EXPENSE"],[15,22,"CLOTHING_TYPE"]]}],
-      ["Rs 500 undies\r",{"entities":[[3,6,"EXPENSE"],[7,13,"CLOTHING_TYPE"]]}],
-      ["Rs 300 lingerie\r",{"entities":[[3,6,"EXPENSE"],[7,15,"CLOTHING_TYPE"]]}],
-      ["Rs 250 set of briefs\r",{"entities":[[3,6,"EXPENSE"],[14,20,"CLOTHING_TYPE"]]}],
-      ["Rs 180 bralette\r",{"entities":[[3,6,"EXPENSE"],[7,15,"CLOTHING_TYPE"]]}],
-      ["Rs 350 set of thermal underwear\r",{"entities":[[3,6,"EXPENSE"],[14,31,"CLOTHING_TYPE"]]}],
-      ["Rs 120 cotton briefs\r",{"entities":[[3,6,"EXPENSE"],[7,20,"CLOTHING_TYPE"]]}],
-      ["Rs 180 set of lace panties\r",{"entities":[[3,6,"EXPENSE"],[14,26,"CLOTHING_TYPE"]]}],
-      ["Rs 200 pair of silk boxers\r",{"entities":[[3,6,"EXPENSE"],[15,26,"CLOTHING_TYPE"]]}],
-      ["Rs 150 pair of seamless underwear\r",{"entities":[[3,6,"EXPENSE"],[15,33,"CLOTHING_TYPE"]]}],
-
-
-
-      ["Just paid the electricity bill and the total amount was Rs 1500.\r",{"entities":[[14,30,"BILL_TYPE"],[59,63,"EXPENSE"]]}],
-      ["Took care of the water bill today, it came out to Rs 700.\r",{"entities":[[17,27,"BILL_TYPE"],[53,56,"EXPENSE"]]}],
-      ["Paid the internet bill for this month and the total was Rs 1200.\r",{"entities":[[9,22,"BILL_TYPE"],[59,63,"EXPENSE"]]}],
-      ["Just settled the phone bill, it was Rs 800 this time.\r",{"entities":[[17,27,"BILL_TYPE"],[39,42,"EXPENSE"]]}],
-      ["Covered the gas bill which came to Rs 1000.\r",{"entities":[[12,20,"BILL_TYPE"],[38,42,"EXPENSE"]]}],
-      ["Paid the cable TV bill and the total amount due was Rs 600.\r",{"entities":[[9,22,"BILL_TYPE"],[55,58,"EXPENSE"]]}],
-      ["Took care of the garbage collection bill - it was Rs 300 this time.\r",{"entities":[[17,40,"BILL_TYPE"],[53,56,"EXPENSE"]]}],
-      ["Just handled the home insurance premium - it came to Rs 2500.\r",{"entities":[[17,39,"BILL_TYPE"],[56,60,"EXPENSE"]]}],
-      ["Paid the property tax - total amount due was Rs 1800.\r",{"entities":[[9,21,"BILL_TYPE"],[48,52,"EXPENSE"]]}],
-      ["Covered the car insurance premium - came out to Rs 3500.\r",{"entities":[[12,33,"BILL_TYPE"],[51,55,"EXPENSE"]]}],
-      ["Paid the rent for the month - total was Rs 15000.\r",{"entities":[[9,13,"BILL_TYPE"],[43,48,"EXPENSE"]]}],
-      ["Just handled the bills which came out to Rs 7000.\r",{"entities":[[17,22,"BILL_TYPE"],[44,48,"EXPENSE"]]}],
-      ["Settled the health insurance premium - it came to Rs 2000.\r",{"entities":[[12,36,"BILL_TYPE"],[53,57,"EXPENSE"]]}],
-      ["Covered the car loan installment - total amount due was Rs 12500.\r",{"entities":[[12,32,"BILL_TYPE"],[59,64,"EXPENSE"]]}],
-      ["Paid the mortgage for the house - it was Rs 25000 this month.\r",{"entities":[[9,17,"BILL_TYPE"],[44,49,"EXPENSE"]]}],
-      ["Just handled the bill - it came out to Rs 3000.\r",{"entities":[[17,21,"BILL_TYPE"],[42,46,"EXPENSE"]]}],
-      ["Covered the car registration renewal - total amount due was Rs 4000.\r",{"entities":[[12,36,"BILL_TYPE"],[63,67,"EXPENSE"]]}],
-      ["Settled the credit card bill - total amount due was Rs 7000.\r",{"entities":[[12,28,"BILL_TYPE"],[55,59,"EXPENSE"]]}],
-      ["Paid the medical bills for last month's treatment - total was Rs 5000.\r",{"entities":[[9,22,"BILL_TYPE"],[65,69,"EXPENSE"]]}],
-      ["Covered the life insurance premium - total amount due was Rs 3000.\r",{"entities":[[12,26,"BILL_TYPE"],[61,65,"EXPENSE"]]}],
-      ["Paid the property tax - it was Rs 2000 this quarter.\r",{"entities":[[9,21,"BILL_TYPE"],[34,38,"EXPENSE"]]}],
-      ["Paid the income tax for the fiscal year - total was Rs 50000.\r",{"entities":[[9,19,"BILL_TYPE"],[55,60,"EXPENSE"]]}],
-      ["Settled the property tax for the house - it came to Rs 15000 this quarter.\r",{"entities":[[12,24,"BILL_TYPE"],[55,60,"EXPENSE"]]}],
-      ["Covered the sales tax for the business - total amount due was Rs 10000.\r",{"entities":[[12,21,"BILL_TYPE"],[65,70,"EXPENSE"]]}],
-      ["Paid the vehicle tax for the car - it was Rs 5000 this year.\r",{"entities":[[9,20,"BILL_TYPE"],[45,49,"EXPENSE"]]}],
-      ["Just handled the excise tax for the manufacturing unit - it came out to Rs 20000.\r",{"entities":[[17,27,"BILL_TYPE"],[75,80,"EXPENSE"]]}],
-      ["Covered the property assessment tax - total amount due was Rs 8000.\r",{"entities":[[12,35,"BILL_TYPE"],[62,66,"EXPENSE"]]}],
-      ["Settled the goods and services tax - it was Rs 30000 this quarter.\r",{"entities":[[12,34,"BILL_TYPE"],[47,52,"EXPENSE"]]}],
-      ["Paid the import duty for the imported goods - total was Rs 25000.\r",{"entities":[[9,20,"BILL_TYPE"],[59,64,"EXPENSE"]]}],
-      ["Paid my taxes which was Rs 80000 this year.\r",{"entities":[[8,13,"BILL_TYPE"],[27,32,"EXPENSE"]]}],
-      ["Covered the property transfer tax for the real estate transaction - it came to Rs 12000.\r",{"entities":[[12,33,"BILL_TYPE"],[82,87,"EXPENSE"]]}],
-      ["Just handled the value added tax for the business - it was Rs 18000 this month.\r",{"entities":[[17,32,"BILL_TYPE"],[62,67,"EXPENSE"]]}],
-      ["Paid the professional tax for the employees - total amount due was Rs 5000.\r",{"entities":[[9,25,"BILL_TYPE"],[70,74,"EXPENSE"]]}],
-      ["Covered the local body tax - it came out to Rs 3000 this quarter.\r",{"entities":[[12,26,"BILL_TYPE"],[47,51,"EXPENSE"]]}],
-      ["Settled the customs duty for the imported goods - total amount due was Rs 15000.\r",{"entities":[[12,24,"BILL_TYPE"],[74,79,"EXPENSE"]]}],
-      ["electricity bill 1500\r",{"entities":[[0,16,"BILL_TYPE"],[17,21,"EXPENSE"]]}],
-      ["water bill 700\r",{"entities":[[0,10,"BILL_TYPE"],[11,14,"EXPENSE"]]}],
-      ["internet bill 1200\r",{"entities":[[0,13,"BILL_TYPE"],[14,18,"EXPENSE"]]}],
-      ["phone bill 800\r",{"entities":[[0,10,"BILL_TYPE"],[11,14,"EXPENSE"]]}],
-      ["gas bill 1000\r",{"entities":[[0,8,"BILL_TYPE"],[9,13,"EXPENSE"]]}],
-      ["cable TV bill 600\r",{"entities":[[0,13,"BILL_TYPE"],[14,17,"EXPENSE"]]}],
-      ["garbage collection bill 300\r",{"entities":[[0,23,"BILL_TYPE"],[24,27,"EXPENSE"]]}],
-      ["home insurance premium 2500\r",{"entities":[[0,14,"BILL_TYPE"],[23,27,"EXPENSE"]]}],
-      ["property tax 1800\r",{"entities":[[0,12,"BILL_TYPE"],[13,17,"EXPENSE"]]}],
-      ["car insurance premium 3500\r",{"entities":[[0,13,"BILL_TYPE"],[22,26,"EXPENSE"]]}],
-      ["rent 15000\r",{"entities":[[0,4,"BILL_TYPE"],[5,10,"EXPENSE"]]}],
-      ["bills 7000\r",{"entities":[[0,5,"BILL_TYPE"],[6,10,"EXPENSE"]]}],
-      ["health insurance premium 2000\r",{"entities":[[0,24,"BILL_TYPE"],[25,29,"EXPENSE"]]}],
-      ["car loan installment 12500\r",{"entities":[[0,20,"BILL_TYPE"],[21,26,"EXPENSE"]]}],
-      ["mortgage 25000\r",{"entities":[[0,8,"BILL_TYPE"],[9,14,"EXPENSE"]]}],
-      ["bill 3000\r",{"entities":[[0,4,"BILL_TYPE"],[5,9,"EXPENSE"]]}],
-      ["car registration renewal 4000\r",{"entities":[[0,24,"BILL_TYPE"],[25,29,"EXPENSE"]]}],
-      ["credit card bill 7000\r",{"entities":[[0,16,"BILL_TYPE"],[17,21,"EXPENSE"]]}],
-      ["medical bills 5000\r",{"entities":[[0,13,"BILL_TYPE"],[14,18,"EXPENSE"]]}],
-      ["life insurance premium 3000\r",{"entities":[[0,22,"BILL_TYPE"],[23,27,"EXPENSE"]]}],
-      ["property tax 2000\r",{"entities":[[0,12,"BILL_TYPE"],[13,17,"EXPENSE"]]}],
-      ["income tax 50000\r",{"entities":[[0,10,"BILL_TYPE"],[11,16,"EXPENSE"]]}],
-      ["tax 50000\r",{"entities":[[0,3,"BILL_TYPE"],[4,9,"EXPENSE"]]}],
-      ["property tax 15000\r",{"entities":[[0,12,"BILL_TYPE"],[13,18,"EXPENSE"]]}],
-      ["sales tax 10000\r",{"entities":[[0,9,"BILL_TYPE"],[10,15,"EXPENSE"]]}],
-      ["vehicle tax 5000\r",{"entities":[[0,11,"BILL_TYPE"],[12,16,"EXPENSE"]]}],
-      ["excise tax 20000\r",{"entities":[[0,10,"BILL_TYPE"],[11,16,"EXPENSE"]]}],
-      ["property assessment tax 8000\r",{"entities":[[0,23,"BILL_TYPE"],[24,28,"EXPENSE"]]}],
-      ["goods and services tax 30000\r",{"entities":[[0,22,"BILL_TYPE"],[23,28,"EXPENSE"]]}],
-      ["import duty 25000\r",{"entities":[[0,11,"BILL_TYPE"],[12,17,"EXPENSE"]]}],
-      ["taxes 80000\r",{"entities":[[0,5,"BILL_TYPE"],[6,11,"EXPENSE"]]}],
-      ["property transfer tax 12000\r",{"entities":[[0,21,"BILL_TYPE"],[22,27,"EXPENSE"]]}],
-      ["value added tax 18000\r",{"entities":[[0,15,"BILL_TYPE"],[16,21,"EXPENSE"]]}],
-      ["professional tax 5000\r",{"entities":[[0,16,"BILL_TYPE"],[17,21,"EXPENSE"]]}],
-      ["local body tax 3000\r",{"entities":[[0,14,"BILL_TYPE"],[15,19,"EXPENSE"]]}],
-      ["customs duty 15000",{"entities":[[0,12,"BILL_TYPE"],[13,18,"EXPENSE"]]}],
-
-
-
-      ["Just filled up the car with petrol for a total of Rs 2000.\r",{"entities":[[19,22,"VEHICLE_TYPE"],[28,34,"FUEL_TYPE"],[53,57,"EXPENSE"]]}],
-      ["Topped up the bike with petrol for Rs 500.\r",{"entities":[[14,18,"VEHICLE_TYPE"],[24,30,"FUEL_TYPE"],[38,41,"EXPENSE"]]}],
-      ["Just filled up the car with diesel for a total of Rs 500.\r",{"entities":[[19,22,"VEHICLE_TYPE"],[28,34,"FUEL_TYPE"],[53,56,"EXPENSE"]]}],
-      ["Got my 4-wheeler filled with petrol for Rs 1500.\r",{"entities":[[7,16,"VEHICLE_TYPE"],[29,35,"FUEL_TYPE"],[43,47,"EXPENSE"]]}],
-      ["Refueled the scooter with petrol spending Rs 300.\r",{"entities":[[13,20,"VEHICLE_TYPE"],[26,32,"FUEL_TYPE"],[45,48,"EXPENSE"]]}],
-      ["Filled up the truck with diesel for Rs 1000.\r",{"entities":[[14,19,"VEHICLE_TYPE"],[25,31,"FUEL_TYPE"],[39,43,"EXPENSE"]]}],
-      ["Topped up the motorcycle with petrol at an expense of Rs 400.\r",{"entities":[[14,24,"VEHICLE_TYPE"],[30,36,"FUEL_TYPE"],[57,60,"EXPENSE"]]}],
-      ["Just refueled my van with diesel for Rs 800.\r",{"entities":[[17,20,"VEHICLE_TYPE"],[26,32,"FUEL_TYPE"],[40,43,"EXPENSE"]]}],
-      ["Topped up the scooty with petrol for Rs 200.\r",{"entities":[[14,20,"VEHICLE_TYPE"],[26,32,"FUEL_TYPE"],[40,43,"EXPENSE"]]}],
-      ["Just filled the RV with propane for a total of Rs 1000.\r",{"entities":[[16,18,"VEHICLE_TYPE"],[24,31,"FUEL_TYPE"],[50,54,"EXPENSE"]]}],
-      ["Filled up the moped with gasoline for a total of Rs 150.\r",{"entities":[[14,19,"VEHICLE_TYPE"],[25,33,"FUEL_TYPE"],[52,55,"EXPENSE"]]}],
-      ["Topped up the minivan with diesel for Rs 700.\r",{"entities":[[14,21,"VEHICLE_TYPE"],[27,33,"FUEL_TYPE"],[41,44,"EXPENSE"]]}],
-      ["Refueled the camper with propane at an expense of Rs 800.\r",{"entities":[[13,19,"VEHICLE_TYPE"],[25,32,"FUEL_TYPE"],[53,56,"EXPENSE"]]}],
-      ["Just filled up the SUV with petrol for Rs 1200.\r",{"entities":[[19,22,"VEHICLE_TYPE"],[28,34,"FUEL_TYPE"],[42,46,"EXPENSE"]]}],
-      ["Topped up the convertible with premium petrol for Rs 1000.\r",{"entities":[[14,25,"VEHICLE_TYPE"],[39,45,"FUEL_TYPE"],[53,57,"EXPENSE"]]}],
-      ["Got my sedan filled with diesel for Rs 600.\r",{"entities":[[7,12,"VEHICLE_TYPE"],[25,31,"FUEL_TYPE"],[39,42,"EXPENSE"]]}],
-      ["Fueled up the ATV with regular petrol spending Rs 250.\r",{"entities":[[14,17,"VEHICLE_TYPE"],[31,37,"FUEL_TYPE"],[50,53,"EXPENSE"]]}],
-      ["Just refueled the pickup truck with petrol for Rs 900.\r",{"entities":[[18,30,"VEHICLE_TYPE"],[36,42,"FUEL_TYPE"],[50,53,"EXPENSE"]]}],
-      ["Topped up the crossover with unleaded petrol for Rs 850.\r",{"entities":[[14,23,"VEHICLE_TYPE"],[38,44,"FUEL_TYPE"],[52,55,"EXPENSE"]]}],
-      ["Filled the hatchback with diesel at an expense of Rs 550.\r",{"entities":[[11,20,"VEHICLE_TYPE"],[26,32,"FUEL_TYPE"],[53,56,"EXPENSE"]]}],
-      ["Filled up the auto-rickshaw with petrol for Rs 200.\r",{"entities":[[14,27,"VEHICLE_TYPE"],[33,39,"FUEL_TYPE"],[47,50,"EXPENSE"]]}],
-      ["Topped up the auto with petrol for Rs 350.\r",{"entities":[[14,18,"VEHICLE_TYPE"],[24,30,"FUEL_TYPE"],[38,41,"EXPENSE"]]}],
-      ["Topped up the bus with diesel for Rs 1500.\r",{"entities":[[14,17,"VEHICLE_TYPE"],[23,29,"FUEL_TYPE"],[37,41,"EXPENSE"]]}],
-      ["Refueled the motorbike with petrol at an expense of Rs 300.\r",{"entities":[[13,22,"VEHICLE_TYPE"],[28,34,"FUEL_TYPE"],[55,58,"EXPENSE"]]}],
-      ["Just filled up the cycle rickshaw with petrol for Rs 100.\r",{"entities":[[19,33,"VEHICLE_TYPE"],[39,45,"FUEL_TYPE"],[53,56,"EXPENSE"]]}],
-      ["Topped up the truck with diesel for Rs 1200.\r",{"entities":[[14,19,"VEHICLE_TYPE"],[25,31,"FUEL_TYPE"],[39,43,"EXPENSE"]]}],
-      ["Got my scooter filled with petrol for Rs 150.\r",{"entities":[[7,14,"VEHICLE_TYPE"],[27,33,"FUEL_TYPE"],[41,44,"EXPENSE"]]}],
-      ["Fueled up the city bus with diesel spending Rs 2000.\r",{"entities":[[19,22,"VEHICLE_TYPE"],[28,34,"FUEL_TYPE"],[47,51,"EXPENSE"]]}],
-      ["Just refueled the motorcycle with petrol for Rs 250.\r",{"entities":[[18,28,"VEHICLE_TYPE"],[34,40,"FUEL_TYPE"],[48,51,"EXPENSE"]]}],
-      ["Topped up the tempo with diesel for Rs 800.\r",{"entities":[[14,19,"VEHICLE_TYPE"],[25,31,"FUEL_TYPE"],[39,42,"EXPENSE"]]}],
-      ["Filled up the van with petrol for Rs 500.\r",{"entities":[[14,17,"VEHICLE_TYPE"],[23,29,"FUEL_TYPE"],[37,40,"EXPENSE"]]}],
-      ["Petrol scooter for Rs 300.\r",{"entities":[[0,6,"FUEL_TYPE"],[7,14,"VEHICLE_TYPE"],[22,25,"EXPENSE"]]}],
-      ["Petrol sedan for Rs 1200.\r",{"entities":[[0,6,"FUEL_TYPE"],[7,12,"VEHICLE_TYPE"],[20,24,"EXPENSE"]]}],
-      ["Petrol bike 700.\r",{"entities":[[0,6,"FUEL_TYPE"],[7,11,"VEHICLE_TYPE"],[12,15,"EXPENSE"]]}],
-      ["Petrol for Rs 800 hatchback.\r",{"entities":[[0,6,"FUEL_TYPE"],[14,17,"EXPENSE"],[18,27,"VEHICLE_TYPE"]]}],
-      ["Diesel truck 2000.\r",{"entities":[[0,6,"FUEL_TYPE"],[7,12,"VEHICLE_TYPE"],[13,17,"EXPENSE"]]}],
-      ["Diesel for Rs 1000 bus.\r",{"entities":[[0,6,"FUEL_TYPE"],[14,18,"EXPENSE"],[19,22,"VEHICLE_TYPE"]]}],
-      ["Diesel auto 450.\r",{"entities":[[0,6,"FUEL_TYPE"],[7,11,"VEHICLE_TYPE"],[12,15,"EXPENSE"]]}],
-      ["Diesel scooter for Rs 200.\r",{"entities":[[0,6,"FUEL_TYPE"],[7,14,"VEHICLE_TYPE"],[22,25,"EXPENSE"]]}],
-      ["Diesel 500 truck.\r",{"entities":[[0,6,"FUEL_TYPE"],[7,10,"EXPENSE"],[11,16,"VEHICLE_TYPE"]]}],
-      ["Diesel auto Rs 300.\r",{"entities":[[0,6,"FUEL_TYPE"],[7,11,"VEHICLE_TYPE"],[15,18,"EXPENSE"]]}],
-      ["Car petrol 2000.\r",{"entities":[[0,3,"VEHICLE_TYPE"],[4,10,"FUEL_TYPE"],[11,15,"EXPENSE"]]}],
-      ["Bike petrol 500.\r",{"entities":[[0,4,"VEHICLE_TYPE"],[5,11,"FUEL_TYPE"],[12,15,"EXPENSE"]]}],
-      ["Car diesel 500.\r",{"entities":[[0,3,"VEHICLE_TYPE"],[4,10,"FUEL_TYPE"],[11,14,"EXPENSE"]]}],
-      ["4-wheeler petrol 1500.\r",{"entities":[[0,9,"VEHICLE_TYPE"],[10,16,"FUEL_TYPE"],[17,21,"EXPENSE"]]}],
-      ["Scooter petrol 300.\r",{"entities":[[0,7,"VEHICLE_TYPE"],[8,14,"FUEL_TYPE"],[15,18,"EXPENSE"]]}],
-      ["truck diesel 1000\r",{"entities":[[0,5,"VEHICLE_TYPE"],[6,12,"FUEL_TYPE"],[13,17,"EXPENSE"]]}],
-      ["motorcycle petrol 400\r",{"entities":[[0,10,"VEHICLE_TYPE"],[11,17,"FUEL_TYPE"],[18,21,"EXPENSE"]]}],
-      ["van diesel 800\r",{"entities":[[0,3,"VEHICLE_TYPE"],[4,10,"FUEL_TYPE"],[11,14,"EXPENSE"]]}],
-      ["scooty petrol 200\r",{"entities":[[0,6,"VEHICLE_TYPE"],[7,13,"FUEL_TYPE"],[14,17,"EXPENSE"]]}],
-      ["RV propane 1000\r",{"entities":[[0,2,"VEHICLE_TYPE"],[3,10,"FUEL_TYPE"],[11,15,"EXPENSE"]]}],
-      ["moped gasoline 150\r",{"entities":[[0,5,"VEHICLE_TYPE"],[6,14,"FUEL_TYPE"],[15,18,"EXPENSE"]]}],
-      ["minivan diesel 700\r",{"entities":[[0,7,"VEHICLE_TYPE"],[8,14,"FUEL_TYPE"],[15,18,"EXPENSE"]]}],
-      ["camper propane 800\r",{"entities":[[0,6,"VEHICLE_TYPE"],[7,14,"FUEL_TYPE"],[15,18,"EXPENSE"]]}],
-      ["suv petrol 1200\r",{"entities":[[0,3,"VEHICLE_TYPE"],[4,10,"FUEL_TYPE"],[11,15,"EXPENSE"]]}],
-      ["convertible premium petrol 1000\r",{"entities":[[0,11,"VEHICLE_TYPE"],[20,26,"FUEL_TYPE"],[27,31,"EXPENSE"]]}],
-      ["sedan diesel 600\r",{"entities":[[0,5,"VEHICLE_TYPE"],[6,12,"FUEL_TYPE"],[13,16,"EXPENSE"]]}],
-      ["ATV regular petrol 250\r",{"entities":[[0,3,"VEHICLE_TYPE"],[12,18,"FUEL_TYPE"],[19,22,"EXPENSE"]]}],
-      ["pickup truck petrol 900\r",{"entities":[[0,12,"VEHICLE_TYPE"],[13,19,"FUEL_TYPE"],[20,23,"EXPENSE"]]}],
-      ["crossover unleaded petrol 850\r",{"entities":[[0,9,"VEHICLE_TYPE"],[19,25,"FUEL_TYPE"],[26,29,"EXPENSE"]]}],
-      ["hatchback diesel 550\r",{"entities":[[0,9,"VEHICLE_TYPE"],[10,16,"FUEL_TYPE"],[17,20,"EXPENSE"]]}],
-      ["auto-rickshaw petrol 200\r",{"entities":[[0,13,"VEHICLE_TYPE"],[14,20,"FUEL_TYPE"],[21,24,"EXPENSE"]]}],
-      ["auto petrol 350\r",{"entities":[[0,4,"VEHICLE_TYPE"],[5,11,"FUEL_TYPE"],[12,15,"EXPENSE"]]}],
-      ["bus diesel 1500\r",{"entities":[[0,3,"VEHICLE_TYPE"],[4,10,"FUEL_TYPE"],[11,15,"EXPENSE"]]}],
-      ["motorbike petrol 300\r",{"entities":[[0,9,"VEHICLE_TYPE"],[10,16,"FUEL_TYPE"],[17,20,"EXPENSE"]]}],
-      ["cycle rickshaw petrol 100\r",{"entities":[[0,14,"VEHICLE_TYPE"],[15,21,"FUEL_TYPE"],[22,25,"EXPENSE"]]}],
-      ["truck diesel 1200\r",{"entities":[[0,5,"VEHICLE_TYPE"],[6,12,"FUEL_TYPE"],[13,17,"EXPENSE"]]}],
-      ["scooter petrol 150\r",{"entities":[[0,7,"VEHICLE_TYPE"],[8,14,"FUEL_TYPE"],[15,18,"EXPENSE"]]}],
-      ["city bus diesel 2000\r",{"entities":[[5,8,"VEHICLE_TYPE"],[9,15,"FUEL_TYPE"],[16,20,"EXPENSE"]]}],
-      ["motorcycle petrol 250\r",{"entities":[[0,10,"VEHICLE_TYPE"],[11,17,"FUEL_TYPE"],[18,21,"EXPENSE"]]}],
-      ["tempo diesel 800\r",{"entities":[[0,5,"VEHICLE_TYPE"],[6,12,"FUEL_TYPE"],[13,16,"EXPENSE"]]}],
-      ["van petrol 500\r",{"entities":[[0,3,"VEHICLE_TYPE"],[4,10,"FUEL_TYPE"],[11,14,"EXPENSE"]]}],
-      ["scooter petrol 300\r",{"entities":[[0,7,"VEHICLE_TYPE"],[8,14,"FUEL_TYPE"],[15,18,"EXPENSE"]]}],
-      ["sedan petrol 1200\r",{"entities":[[0,5,"VEHICLE_TYPE"],[6,12,"FUEL_TYPE"],[13,17,"EXPENSE"]]}],
-      ["bike petrol 700\r",{"entities":[[0,4,"VEHICLE_TYPE"],[5,11,"FUEL_TYPE"],[12,15,"EXPENSE"]]}],
-      ["hatchback petrol 800\r",{"entities":[[0,9,"VEHICLE_TYPE"],[10,16,"FUEL_TYPE"],[17,20,"EXPENSE"]]}],
-      ["truck diesel 2000\r",{"entities":[[0,5,"VEHICLE_TYPE"],[6,12,"FUEL_TYPE"],[13,17,"EXPENSE"]]}],
-      ["bus diesel 1000\r",{"entities":[[0,3,"VEHICLE_TYPE"],[4,10,"FUEL_TYPE"],[11,15,"EXPENSE"]]}],
-      ["auto diesel 450\r",{"entities":[[0,4,"VEHICLE_TYPE"],[5,11,"FUEL_TYPE"],[12,15,"EXPENSE"]]}],
-      ["scooter diesel 200\r",{"entities":[[0,7,"VEHICLE_TYPE"],[8,14,"FUEL_TYPE"],[15,18,"EXPENSE"]]}],
-      ["truck diesel 500\r",{"entities":[[0,5,"VEHICLE_TYPE"],[6,12,"FUEL_TYPE"],[13,16,"EXPENSE"]]}],
-      ["auto diesel 300",{"entities":[[0,4,"VEHICLE_TYPE"],[5,11,"FUEL_TYPE"],[12,15,"EXPENSE"]]}]
+      [
+        "Paid Rs 1199 for a new Spotify subscription this month.\r",
+        { "entities": [[23, 30, "SUBSCRIPTION_TYPE"]] }
+      ],
+      [
+        "The annual Netflix subscription cost me Rs 2400.\r",
+        { "entities": [[11, 18, "SUBSCRIPTION_TYPE"]] }
+      ],
+      [
+        "I renewed my Hotstar account with a payment of Rs 1799.\r",
+        { "entities": [[13, 20, "SUBSCRIPTION_TYPE"]] }
+      ],
+      [
+        "Rs 800 was spent on a monthly subscription for Sony Liv.\r",
+        { "entities": [[47, 55, "SUBSCRIPTION_TYPE"]] }
+      ],
+      [
+        "The subscription fee for Amazon Prime was Rs 1500 this year.\r",
+        { "entities": [[25, 37, "SUBSCRIPTION_TYPE"]] }
+      ],
+      [
+        "A total of Rs 2499 was charged for a year of Apple Music.\r",
+        { "entities": [[45, 56, "SUBSCRIPTION_TYPE"]] }
+      ],
+      [
+        "Renewed the HBO Max membership for Rs 2000.\r",
+        { "entities": [[12, 19, "SUBSCRIPTION_TYPE"]] }
+      ],
+      [
+        "Rs 1399 was debited for my monthly subscription to YouTube Premium.\r",
+        { "entities": [[51, 66, "SUBSCRIPTION_TYPE"]] }
+      ],
+      [
+        "The Netflix annual subscription fee was Rs 3000.\r",
+        { "entities": [[4, 11, "SUBSCRIPTION_TYPE"]] }
+      ],
+      [
+        "I paid Rs 1699 for a yearly subscription to LinkedIn Premium.\r",
+        { "entities": [[44, 60, "SUBSCRIPTION_TYPE"]] }
+      ],
+      [
+        "For this quarter, Rs 1200 was paid for the Microsoft Office 365 subscription.\r",
+        { "entities": [[43, 63, "SUBSCRIPTION_TYPE"]] }
+      ],
+      [
+        "Rs 999 was spent on a monthly subscription to Saavn.\r",
+        { "entities": [[46, 51, "SUBSCRIPTION_TYPE"]] }
+      ],
+      [
+        "The cost of the yearly subscription to PlayStation Plus was Rs 3600.\r",
+        { "entities": [[39, 55, "SUBSCRIPTION_TYPE"]] }
+      ],
+      [
+        "Renewed my subscription to Zomato Gold for Rs 900.\r",
+        { "entities": [[27, 38, "SUBSCRIPTION_TYPE"]] }
+      ],
+      [
+        "Rs 2000 was spent on an annual subscription to Prime Video.\r",
+        { "entities": [[47, 58, "SUBSCRIPTION_TYPE"]] }
+      ],
+      [
+        "The monthly cost for a Swiggy One subscription was Rs 499.\r",
+        { "entities": [[23, 33, "SUBSCRIPTION_TYPE"]] }
+      ],
+      [
+        "I spent Rs 2800 on a subscription for Xbox Game Pass.\r",
+        { "entities": [[38, 52, "SUBSCRIPTION_TYPE"]] }
+      ],
+      [
+        "Paid Rs 1499 for a monthly subscription to Apple TV+.\r",
+        { "entities": [[43, 52, "SUBSCRIPTION_TYPE"]] }
+      ],
+      [
+        "Rs 1000 was charged for the quarterly subscription to Flipkart Plus.\r",
+        { "entities": [[54, 67, "SUBSCRIPTION_TYPE"]] }
+      ],
+      [
+        "The yearly subscription for Airtel was Rs 3000.\r",
+        { "entities": [[28, 34, "SUBSCRIPTION_TYPE"]] }
+      ],
+      [
+        "Renewed the Dropbox Plus subscription for Rs 2500.\r",
+        { "entities": [[12, 24, "SUBSCRIPTION_TYPE"]] }
+      ],
+      [
+        "Rs 1299 was debited for the subscription to Jio.\r",
+        { "entities": [[44, 47, "SUBSCRIPTION_TYPE"]] }
+      ],
+      [
+        "I paid Rs 1700 for a subscription to Prime Video.\r",
+        { "entities": [[37, 48, "SUBSCRIPTION_TYPE"]] }
+      ],
+      [
+        "The monthly subscription to Google One cost Rs 1999.\r",
+        { "entities": [[28, 38, "SUBSCRIPTION_TYPE"]] }
+      ],
+      [
+        "Rs 2500 was paid for a subscription to Spotify.",
+        { "entities": [[39, 46, "SUBSCRIPTION_TYPE"]] }
+      ],
+      [
+        "I spent 1500 on clothes last weekend.\r",
+        {
+            "entities": [
+                [
+                    16,
+                    23,
+                    "CLOTHING_TYPE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Bought a pair of jeans for 1200.\r",
+        {
+            "entities": [
+                [
+                    9,
+                    22,
+                    "CLOTHING_TYPE"
+                ]
+            ]
+        }
+    ],
+    [
+        "The t-shirt I purchased cost me 500.\r",
+        {
+            "entities": [
+                [
+                    4,
+                    11,
+                    "CLOTHING_TYPE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Paid 2000 for a traditional kurta for the festival.\r",
+        {
+            "entities": [
+                [
+                    28,
+                    33,
+                    "CLOTHING_TYPE"
+                ]
+            ]
+        }
+    ],
+    [
+        "I spent 800 on a new hoodie yesterday.\r",
+        {
+            "entities": [
+                [
+                    21,
+                    27,
+                    "CLOTHING_TYPE"
+                ]
+            ]
+        }
+    ],
+    [
+        "The dress was bought for 1800 at a sale.\r",
+        {
+            "entities": [
+                [
+                    4,
+                    9,
+                    "CLOTHING_TYPE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Paid 350 for a pair of socks and gloves.\r",
+        {
+            "entities": [
+                [
+                    15,
+                    28,
+                    "CLOTHING_TYPE"
+                ],
+                [
+                    33,
+                    39,
+                    "CLOTHING_TYPE"
+                ]
+            ]
+        }
+    ],
+    [
+        "I purchased a formal shirt for 900 last week.\r",
+        {
+            "entities": [
+                [
+                    21,
+                    26,
+                    "CLOTHING_TYPE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Spent 4000 on a suit.\r",
+        {
+            "entities": [
+                [
+                    16,
+                    20,
+                    "CLOTHING_TYPE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Paid 600 for a blazer.\r",
+        {
+            "entities": [
+                [
+                    15,
+                    21,
+                    "CLOTHING_TYPE"
+                ]
+            ]
+        }
+    ],
+    [
+        "I spent 2500 on a jacket recently.\r",
+        {
+            "entities": [
+                [
+                    18,
+                    24,
+                    "CLOTHING_TYPE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Bought a saree for 1500.\r",
+        {
+            "entities": [
+                [
+                    9,
+                    14,
+                    "CLOTHING_TYPE"
+                ]
+            ]
+        }
+    ],
+    [
+        "The kids’ school uniform cost 1200.\r",
+        {
+            "entities": [
+                [
+                    10,
+                    24,
+                    "CLOTHING_TYPE"
+                ]
+            ]
+        }
+    ],
+    [
+        "I spent 1000 on workout clothes today.\r",
+        {
+            "entities": [
+                [
+                    16,
+                    31,
+                    "CLOTHING_TYPE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Paid 450 for a pack of underwear.\r",
+        {
+            "entities": [
+                [
+                    23,
+                    32,
+                    "CLOTHING_TYPE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Bought a sweater for 1300 during the winter sale.\r",
+        {
+            "entities": [
+                [
+                    9,
+                    16,
+                    "CLOTHING_TYPE"
+                ]
+            ]
+        }
+    ],
+    [
+        "I picked up a cap and shoes for 750.\r",
+        {
+            "entities": [
+                [
+                    14,
+                    17,
+                    "CLOTHING_TYPE"
+                ],
+                [
+                    22,
+                    27,
+                    "CLOTHING_TYPE"
+                ]
+            ]
+        }
+    ],
+    [
+        "The dress was purchased for 2200 from the boutique.\r",
+        {
+            "entities": [
+                [
+                    4,
+                    9,
+                    "CLOTHING_TYPE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Paid 3000 for a lehenga at a wedding shopping spree.\r",
+        {
+            "entities": [
+                [
+                    16,
+                    23,
+                    "CLOTHING_TYPE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Spent 120 on shorts yesterday.\r",
+        {
+            "entities": [
+                [
+                    13,
+                    19,
+                    "CLOTHING_TYPE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Bought pajamas and slippers for 900 last night.\r",
+        {
+            "entities": [
+                [
+                    7,
+                    14,
+                    "CLOTHING_TYPE"
+                ],
+                [
+                    19,
+                    27,
+                    "CLOTHING_TYPE"
+                ]
+            ]
+        }
+    ],
+    [
+        "I spent 5000 on pants for a family function.\r",
+        {
+            "entities": [
+                [
+                    16,
+                    21,
+                    "CLOTHING_TYPE"
+                ]
+            ]
+        }
+    ],
+    [
+        "Paid 400 for a pair of sandals and flip-flops.\r",
+        {
+            "entities": [
+                [
+                    23,
+                    30,
+                    "CLOTHING_TYPE"
+                ],
+                [
+                    35,
+                    45,
+                    "CLOTHING_TYPE"
+                ]
+            ]
+        }
+    ],
+    [
+        "The jacket I bought cost me 2500.\r",
+        {
+            "entities": [
+                [
+                    4,
+                    10,
+                    "CLOTHING_TYPE"
+                ]
+            ]
+        }
+    ],
+    [
+        "I spent 600 on a couple of t-shirts today.\r",
+        {
+            "entities": [
+                [
+                    27,
+                    35,
+                    "CLOTHING_TYPE"
+                ]
+            ]
+        }
+    ],
+    [
+      "I just paid the electricity bill of 1743 yesterday.\r",
+      { "entities": [[16, 32, "BILL_TYPE"]] }
+    ],
+    [
+      "The water bill for this month was 689.\r",
+      { "entities": [[4, 14, "BILL_TYPE"]] }
+    ],
+    [
+      "I cleared the internet bill, which was 1345, this morning.\r",
+      { "entities": [[14, 27, "BILL_TYPE"]] }
+    ],
+    [
+      "Paid 823 for the phone bill last week.\r",
+      { "entities": [[17, 27, "BILL_TYPE"]] }
+    ],
+    [
+      "The gas bill totaled 1120 this month.\r",
+      { "entities": [[4, 12, "BILL_TYPE"]] }
+    ],
+    [
+      "Settled the cable TV bill of 532 yesterday.\r",
+      { "entities": [[12, 25, "BILL_TYPE"]] }
+    ],
+    [
+      "I had to pay 318 for taxes this week.\r",
+      { "entities": [[21, 26, "BILL_TYPE"]] }
+    ],
+    [
+      "My home insurance premium came to 2467 this year.\r",
+      { "entities": [[3, 25, "BILL_TYPE"]] }
+    ],
+    [
+      "I paid the property tax of 1789 this quarter.\r",
+      { "entities": [[11, 23, "BILL_TYPE"]] }
+    ],
+    [
+      "The car insurance premium was 3657 for this year.\r",
+      { "entities": [[4, 25, "BILL_TYPE"]] }
+    ],
+    [
+      "Paid 15230 for rent this month.\r",
+      { "entities": [[15, 19, "BILL_TYPE"]] }
+    ],
+    [
+      "My total bills this month reached 7235.\r",
+      { "entities": [[9, 14, "BILL_TYPE"]] }
+    ],
+    [
+      "I just paid the health insurance premium of 2056 last night.\r",
+      { "entities": [[16, 40, "BILL_TYPE"]] }
+    ],
+    [
+      "The car loan installment for this month was 12437.\r",
+      { "entities": [[4, 12, "BILL_TYPE"]] }
+    ],
+    [
+      "Paid 24985 for the mortgage this month.\r",
+      { "entities": [[19, 27, "BILL_TYPE"]] }
+    ],
+    [
+      "My utility bills amounted to 3114 this week.\r",
+      { "entities": [[3, 16, "BILL_TYPE"]] }
+    ],
+    [
+      "The Wi-Fi bill cost me 4217 last week.\r",
+      { "entities": [[4, 14, "BILL_TYPE"]] }
+    ],
+    [
+      "Paid off a credit card bill of 6854 recently.\r",
+      { "entities": [[11, 27, "BILL_TYPE"]] }
+    ],
+    [
+      "I had to settle medical bills of 4978 last week.\r",
+      { "entities": [[16, 29, "BILL_TYPE"]] }
+    ],
+    [
+      "Paid my life insurance premium of 3128 this month.\r",
+      { "entities": [[8, 30, "BILL_TYPE"]] }
+    ],
+    [
+      "I had to clear my income tax of 49357 last year.\r",
+      { "entities": [[18, 28, "BILL_TYPE"]] }
+    ],
+    [
+      "The sales tax on my purchase was 9932.\r",
+      { "entities": [[4, 13, "BILL_TYPE"]] }
+    ],
+    [
+      "Paid 4987 in vehicle tax last quarter.\r",
+      { "entities": [[13, 24, "BILL_TYPE"]] }
+    ],
+    [
+      "My excise tax for the year was 20167.\r",
+      { "entities": [[3, 13, "BILL_TYPE"]] }
+    ],
+    [
+      "I paid 14892 in customs duty last month.",
+      { "entities": [[16, 28, "BILL_TYPE"]] }
+    ],
+    [
+      "I spent 120 on food yesterday.\r",
+      { "entities": [[15, 19, "FOOD_TYPE"]] }
+    ],
+    [
+      "The total bill for breakfast this morning was 180.\r",
+      {
+        "entities": [
+          [10, 14, "BILL_TYPE"],
+          [19, 28, "FOOD_TYPE"]
+        ]
+      }
+    ],
+    ["Ordered a pizza for 500.\r", { "entities": [[10, 15, "FOOD_TYPE"]] }],
+    [
+      "I grabbed a sandwich for 150.\r",
+      { "entities": [[12, 20, "FOOD_TYPE"]] }
+    ],
+    ["Spent 50 on dosa.\r", { "entities": [[12, 16, "FOOD_TYPE"]] }],
+    [
+      "Paid 400 for a family dinner at a restaurant.\r",
+      { "entities": [[22, 28, "FOOD_TYPE"]] }
+    ],
+    [
+      "I spent 100 on a burger yesterday evening.\r",
+      { "entities": [[17, 23, "FOOD_TYPE"]] }
+    ],
+    ["Spent 250 on a lunch buffet.\r", { "entities": [[15, 20, "FOOD_TYPE"]] }],
+    [
+      "I ordered a chicken pizza for 600.\r",
+      { "entities": [[12, 25, "FOOD_TYPE"]] }
+    ],
+    [
+      "Spent 100 on samosas and tea during the break.\r",
+      {
+        "entities": [
+          [13, 20, "FOOD_TYPE"],
+          [25, 28, "FOOD_TYPE"]
+        ]
+      }
+    ],
+    [
+      "Bought a plate of mutton biryani for 150.\r",
+      { "entities": [[18, 32, "FOOD_TYPE"]] }
+    ],
+    ["Paid 90 for two ice creams.\r", { "entities": [[16, 26, "FOOD_TYPE"]] }],
+    [
+      "Spent 60 on pani puri at a street vendor.\r",
+      { "entities": [[12, 21, "FOOD_TYPE"]] }
+    ],
+    [
+      "Paid 180 for a burger and fries combo.\r",
+      {
+        "entities": [
+          [15, 21, "FOOD_TYPE"],
+          [26, 31, "FOOD_TYPE"]
+        ]
+      }
+    ],
+    [
+      "I spent 370 on pasta at a restaurant.\r",
+      { "entities": [[15, 20, "FOOD_TYPE"]] }
+    ],
+    [
+      "Spent 100 on pav bhaji last night.\r",
+      { "entities": [[13, 22, "FOOD_TYPE"]] }
+    ],
+    [
+      "Paid 400 for a paneer roll at a hotel.\r",
+      { "entities": [[15, 26, "FOOD_TYPE"]] }
+    ],
+    [
+      "Paid 180 for a chocolate mousse and a cupcake at the bakery.\r",
+      {
+        "entities": [
+          [15, 31, "FOOD_TYPE"],
+          [38, 45, "FOOD_TYPE"]
+        ]
+      }
+    ],
+    [
+      "Paid 240 for a cheesecake and a cappuccino.\r",
+      {
+        "entities": [
+          [15, 25, "FOOD_TYPE"],
+          [32, 42, "FOOD_TYPE"]
+        ]
+      }
+    ],
+    [
+      "Spent 350 on a box of assorted pastries for dessert.\r",
+      { "entities": [[31, 39, "FOOD_TYPE"]] }
+    ],
+    [
+      "The total bill for a slice of red velvet cake and donut was 400.\r",
+      {
+        "entities": [
+          [10, 14, "BILL_TYPE"],
+          [34, 45, "FOOD_TYPE"],
+          [50, 55, "FOOD_TYPE"]
+        ]
+      }
+    ],
+    [
+      "Bought a cheese dosa and coffee for 70.\r",
+      {
+        "entities": [
+          [9, 20, "FOOD_TYPE"],
+          [25, 31, "FOOD_TYPE"]
+        ]
+      }
+    ],
+    [
+      "I grabbed a shawarma roll for 200.\r",
+      { "entities": [[12, 25, "FOOD_TYPE"]] }
+    ],
+    [
+      "Spent 90 on vada pav and a cold drink.\r",
+      {
+        "entities": [
+          [12, 20, "FOOD_TYPE"],
+          [27, 37, "FOOD_TYPE"]
+        ]
+      }
+    ],
+    [
+      "Ordered a chicken kathi roll for 220.",
+      { "entities": [[10, 28, "FOOD_TYPE"]] }
+    ],
+    [
+      "This week, I spent 2400 on petrol for my bike.\r",
+      {
+        "entities": [
+          [27, 33, "FUEL_TYPE"],
+          [41, 45, "VEHICLE_TYPE"]
+        ]
+      }
+    ],
+    [
+      "My truck’s diesel expense came to 5000 this month.\r",
+      {
+        "entities": [
+          [3, 10, "VEHICLE_TYPE"],
+          [11, 17, "FUEL_TYPE"]
+        ]
+      }
+    ],
+    [
+      "Filling up my car with petrol cost me 3200 for the trip.\r",
+      {
+        "entities": [
+          [14, 17, "VEHICLE_TYPE"],
+          [23, 29, "FUEL_TYPE"]
+        ]
+      }
+    ],
+    [
+      "The fuel expense for my scooter this week was 1500.\r",
+      {
+        "entities": [
+          [4, 8, "FUEL_TYPE"],
+          [24, 31, "VEHICLE_TYPE"]
+        ]
+      }
+    ],
+    [
+      "I had to set aside 4500 for diesel for my SUV this month.\r",
+      {
+        "entities": [
+          [28, 34, "FUEL_TYPE"],
+          [42, 45, "VEHICLE_TYPE"]
+        ]
+      }
+    ],
+    [
+      "It took 2700 to fill my van’s gas tank.\r",
+      {
+        "entities": [
+          [24, 29, "VEHICLE_TYPE"],
+          [30, 38, "FUEL_TYPE"]
+        ]
+      }
+    ],
+    [
+      "Spent 3000 on petrol for my car this month.\r",
+      {
+        "entities": [
+          [14, 20, "FUEL_TYPE"],
+          [28, 31, "VEHICLE_TYPE"]
+        ]
+      }
+    ],
+    [
+      "Last week, I used 1800 worth of fuel for my motorcycle.\r",
+      {
+        "entities": [
+          [32, 36, "FUEL_TYPE"],
+          [44, 54, "VEHICLE_TYPE"]
+        ]
+      }
+    ],
+    [
+      "The scooter’s fuel cost last month totaled 2000.\r",
+      {
+        "entities": [
+          [4, 13, "VEHICLE_TYPE"],
+          [14, 18, "FUEL_TYPE"]
+        ]
+      }
+    ],
+    [
+      "I paid 3500 to top off my sedan with petrol.\r",
+      {
+        "entities": [
+          [26, 31, "VEHICLE_TYPE"],
+          [37, 43, "FUEL_TYPE"]
+        ]
+      }
+    ],
+    [
+      "My pickup truck’s diesel expense hit 4000.\r",
+      {
+        "entities": [
+          [3, 17, "VEHICLE_TYPE"],
+          [18, 24, "FUEL_TYPE"]
+        ]
+      }
+    ],
+    [
+      "This month, 2200 went toward petrol for my hatchback.\r",
+      {
+        "entities": [
+          [29, 35, "FUEL_TYPE"],
+          [43, 52, "VEHICLE_TYPE"]
+        ]
+      }
+    ],
+    [
+      "My bike’s fuel expenses added up to 2800 this week.\r",
+      {
+        "entities": [
+          [3, 9, "VEHICLE_TYPE"],
+          [10, 14, "FUEL_TYPE"]
+        ]
+      }
+    ],
+    [
+      "Spent 4100 on diesel for my minivan last month.\r",
+      {
+        "entities": [
+          [14, 20, "FUEL_TYPE"],
+          [28, 35, "VEHICLE_TYPE"]
+        ]
+      }
+    ],
+    [
+      "Over the last two weeks, fuel for my car cost 3400.\r",
+      {
+        "entities": [
+          [25, 29, "FUEL_TYPE"],
+          [37, 40, "VEHICLE_TYPE"]
+        ]
+      }
+    ],
+    [
+      "I had to pay 3000 for petrol for my scooter this month.\r",
+      {
+        "entities": [
+          [22, 28, "FUEL_TYPE"],
+          [36, 43, "VEHICLE_TYPE"]
+        ]
+      }
+    ],
+    [
+      "The truck's diesel cost for the week was 2700.\r",
+      {
+        "entities": [
+          [4, 9, "VEHICLE_TYPE"],
+          [12, 18, "FUEL_TYPE"]
+        ]
+      }
+    ],
+    [
+      "This month, I allocated 3500 for car fuel expenses.\r",
+      {
+        "entities": [
+          [33, 36, "VEHICLE_TYPE"],
+          [37, 41, "FUEL_TYPE"]
+        ]
+      }
+    ],
+    [
+      "Filled my bike’s tank with petrol for 1200 last night.\r",
+      {
+        "entities": [
+          [10, 16, "VEHICLE_TYPE"],
+          [27, 33, "FUEL_TYPE"]
+        ]
+      }
+    ],
+    [
+      "Spent 2500 on gas for my van this week.\r",
+      {
+        "entities": [
+          [14, 17, "FUEL_TYPE"],
+          [25, 28, "VEHICLE_TYPE"]
+        ]
+      }
+    ],
+    [
+      "Over the past month, I used 3900 on diesel for my car.\r",
+      {
+        "entities": [
+          [36, 42, "FUEL_TYPE"],
+          [50, 53, "VEHICLE_TYPE"]
+        ]
+      }
+    ],
+    [
+      "The fuel expenses for my scooter reached 2100 last week.\r",
+      {
+        "entities": [
+          [4, 8, "FUEL_TYPE"],
+          [25, 32, "VEHICLE_TYPE"]
+        ]
+      }
+    ],
+    [
+      "I paid 4800 for petrol for my sedan this month.\r",
+      {
+        "entities": [
+          [16, 22, "FUEL_TYPE"],
+          [30, 35, "VEHICLE_TYPE"]
+        ]
+      }
+    ],
+    [
+      "Last week, my SUV’s diesel expenses totaled 3300.\r",
+      {
+        "entities": [
+          [14, 19, "VEHICLE_TYPE"],
+          [20, 26, "FUEL_TYPE"]
+        ]
+      }
+    ],
+    [
+      "For my trip, I budgeted 3600 for petrol for my bike.",
+      {
+        "entities": [
+          [33, 39, "FUEL_TYPE"],
+          [47, 51, "VEHICLE_TYPE"]
+        ]
+      }
+    ],
+    [
+      "I spent 4500 on my train journey to Chennai this month.\r",
+      {
+        "entities": [
+          [19, 24, "VEHICLE_TYPE"],
+          [36, 43, "TRAVEL_DESTINATION"]
+        ]
+      }
+    ],
+    [
+      "The auto-rickshaw ride to the local market cost me 78 today.\r",
+      {
+        "entities": [
+          [4, 17, "VEHICLE_TYPE"],
+          [30, 42, "TRAVEL_DESTINATION"]
+        ]
+      }
+    ],
+    [
+      "I set aside 3000 for my bus ride to New York this month.\r",
+      {
+        "entities": [
+          [24, 27, "VEHICLE_TYPE"],
+          [36, 44, "TRAVEL_DESTINATION"]
+        ]
+      }
+    ],
+    [
+      "Paid 112 for the taxi ride to the concert last night.\r",
+      {
+        "entities": [
+          [17, 21, "VEHICLE_TYPE"],
+          [34, 41, "TRAVEL_DESTINATION"]
+        ]
+      }
+    ],
+    [
+      "The metro fare to the museum was just 34.\r",
+      {
+        "entities": [
+          [4, 9, "VEHICLE_TYPE"],
+          [22, 28, "TRAVEL_DESTINATION"]
+        ]
+      }
+    ],
+    [
+      "My flight ticket to Rome cost me 287.\r",
+      {
+        "entities": [
+          [3, 9, "VEHICLE_TYPE"],
+          [20, 24, "TRAVEL_DESTINATION"]
+        ]
+      }
+    ],
+    [
+      "Yesterday’s bus ride to the office cost me 156.\r",
+      {
+        "entities": [
+          [12, 15, "VEHICLE_TYPE"],
+          [28, 34, "TRAVEL_DESTINATION"]
+        ]
+      }
+    ],
+    [
+      "The rickshaw ride to the restaurant cost 51.\r",
+      {
+        "entities": [
+          [4, 12, "VEHICLE_TYPE"],
+          [25, 35, "TRAVEL_DESTINATION"]
+        ]
+      }
+    ],
+    [
+      "Last weekend, the train ride to Vellore cost me 264.\r",
+      {
+        "entities": [
+          [18, 23, "VEHICLE_TYPE"],
+          [32, 39, "TRAVEL_DESTINATION"]
+        ]
+      }
+    ],
+    [
+      "I paid 89 for my daily commute on the bus to the university.\r",
+      {
+        "entities": [
+          [38, 41, "VEHICLE_TYPE"],
+          [49, 59, "TRAVEL_DESTINATION"]
+        ]
+      }
+    ],
+    [
+      "My metro ride to London cost 47.\r",
+      {
+        "entities": [
+          [3, 8, "VEHICLE_TYPE"],
+          [17, 23, "TRAVEL_DESTINATION"]
+        ]
+      }
+    ],
+    [
+      "The bus fare to the shopping mall was 72.\r",
+      {
+        "entities": [
+          [4, 7, "VEHICLE_TYPE"],
+          [20, 33, "TRAVEL_DESTINATION"]
+        ]
+      }
+    ],
+    [
+      "The taxi fare to the airport in Chicago last night was 129.\r",
+      {
+        "entities": [
+          [4, 8, "VEHICLE_TYPE"],
+          [21, 28, "TRAVEL_DESTINATION"],
+          [32, 39, "TRAVEL_DESTINATION"]
+        ]
+      }
+    ],
+    [
+      "My bus fare to theatre totaled 194.\r",
+      {
+        "entities": [
+          [3, 6, "VEHICLE_TYPE"],
+          [15, 22, "TRAVEL_DESTINATION"]
+        ]
+      }
+    ],
+    [
+      "The rickshaw fare to the railway station was 102.\r",
+      {
+        "entities": [
+          [4, 12, "VEHICLE_TYPE"],
+          [25, 40, "TRAVEL_DESTINATION"]
+        ]
+      }
+    ],
+    [
+      "My flight ticket to Kerala cost me 346.\r",
+      {
+        "entities": [
+          [3, 9, "VEHICLE_TYPE"],
+          [20, 26, "TRAVEL_DESTINATION"]
+        ]
+      }
+    ],
+    [
+      "I spent 250 for a taxi to the hospital last night.\r",
+      {
+        "entities": [
+          [18, 22, "VEHICLE_TYPE"],
+          [30, 38, "TRAVEL_DESTINATION"]
+        ]
+      }
+    ],
+    [
+      "The bus ride to the temple cost me 160.\r",
+      {
+        "entities": [
+          [4, 7, "VEHICLE_TYPE"],
+          [20, 26, "TRAVEL_DESTINATION"]
+        ]
+      }
+    ],
+    [
+      "The metro fare to the library was 50.\r",
+      {
+        "entities": [
+          [4, 9, "VEHICLE_TYPE"],
+          [22, 29, "TRAVEL_DESTINATION"]
+        ]
+      }
+    ],
+    [
+      "I paid 200 for the bus ticket to Conoor.\r",
+      {
+        "entities": [
+          [19, 22, "VEHICLE_TYPE"],
+          [33, 39, "TRAVEL_DESTINATION"]
+        ]
+      }
+    ],
+    [
+      "The taxi ride to Greece cost me 215.\r",
+      {
+        "entities": [
+          [4, 8, "VEHICLE_TYPE"],
+          [17, 23, "TRAVEL_DESTINATION"]
+        ]
+      }
+    ],
+    [
+      "My flight fare to Barcelona was 123.\r",
+      {
+        "entities": [
+          [3, 9, "VEHICLE_TYPE"],
+          [18, 27, "TRAVEL_DESTINATION"]
+        ]
+      }
+    ],
+    [
+      "The auto-rickshaw to the gym cost 65.\r",
+      {
+        "entities": [
+          [4, 17, "VEHICLE_TYPE"],
+          [25, 28, "TRAVEL_DESTINATION"]
+        ]
+      }
+    ],
+    [
+      "I paid 300 for my bus trip to Miami.\r",
+      {
+        "entities": [
+          [18, 21, "VEHICLE_TYPE"],
+          [30, 35, "TRAVEL_DESTINATION"]
+        ]
+      }
+    ],
+    [
+      "The ferry ride to Dublin cost me 480.",
+      {
+        "entities": [
+          [4, 9, "VEHICLE_TYPE"],
+          [18, 24, "TRAVEL_DESTINATION"]
+        ]
+      }
+    ]
     ]  
   }

@@ -23,12 +23,10 @@
     "ner":[
       "BILL_TYPE",
       "CLOTHING_TYPE",
-      "EXPENSE",
-      "FOOD_ITEM",
+      "FOOD_TYPE",
       "FUEL_TYPE",
       "SUBSCRIPTION_TYPE",
       "TRAVEL_DESTINATION",
-      "TRAVEL_MODE",
       "VEHICLE_TYPE"
     ]
   },
@@ -44,57 +42,47 @@
 
   ],
   "performance":{
-    "ents_f":0.9994863893,
-    "ents_p":1.0,
-    "ents_r":0.998973306,
+    "ents_f":0.961722488,
+    "ents_p":0.9757281553,
+    "ents_r":0.9481132075,
     "ents_per_type":{
       "SUBSCRIPTION_TYPE":{
-        "p":1.0,
-        "r":0.9913793103,
-        "f":0.9956709957
-      },
-      "EXPENSE":{
-        "p":1.0,
-        "r":1.0,
-        "f":1.0
-      },
-      "FOOD_ITEM":{
-        "p":1.0,
-        "r":1.0,
-        "f":1.0
-      },
-      "TRAVEL_MODE":{
-        "p":1.0,
-        "r":1.0,
-        "f":1.0
-      },
-      "TRAVEL_DESTINATION":{
         "p":1.0,
         "r":1.0,
         "f":1.0
       },
       "CLOTHING_TYPE":{
-        "p":1.0,
-        "r":1.0,
-        "f":1.0
+        "p":0.84375,
+        "r":0.9310344828,
+        "f":0.8852459016
       },
       "BILL_TYPE":{
         "p":1.0,
-        "r":1.0,
-        "f":1.0
+        "r":0.962962963,
+        "f":0.9811320755
       },
-      "VEHICLE_TYPE":{
+      "FOOD_TYPE":{
         "p":1.0,
-        "r":1.0,
-        "f":1.0
+        "r":0.9375,
+        "f":0.9677419355
       },
       "FUEL_TYPE":{
         "p":1.0,
-        "r":1.0,
-        "f":1.0
+        "r":0.9583333333,
+        "f":0.9787234043
+      },
+      "VEHICLE_TYPE":{
+        "p":1.0,
+        "r":0.94,
+        "f":0.9690721649
+      },
+      "TRAVEL_DESTINATION":{
+        "p":1.0,
+        "r":0.92,
+        "f":0.9583333333
       }
     },
-    "tok2vec_loss":47.6609011695,
-    "ner_loss":81.4801826652
+    "tok2vec_loss":4524.4219248806,
+    "ner_loss":1426.0472911612
   }
 }
