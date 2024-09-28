@@ -1,0 +1,26 @@
+food
+breakfast
+pizza
+sandwich
+dosa
+dinner
+burger
+lunch
+samosa
+tea
+coffee
+biriyani
+ice cream
+poori
+pav bhaji
+mousse
+cupcake
+cheesecake
+cappuccino
+pastries
+donut
+cake
+shawarma
+vada pav
+cold drink
+pepsi

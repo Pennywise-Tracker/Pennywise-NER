@@ -1099,6 +1099,37 @@
           [18, 24, "TRAVEL_DESTINATION"]
         ]
       }
-    ]
+    ],
+
+
+    ["food\r", { "entities": [[0, 4, "FOOD_TYPE"]] }],
+    ["breakfast\r", { "entities": [[0, 9, "FOOD_TYPE"]] }],
+    ["pizza\r", { "entities": [[0, 5, "FOOD_TYPE"]] }],
+    ["sandwich\r", { "entities": [[0, 8, "FOOD_TYPE"]] }],
+    ["dosa\r", { "entities": [[0, 4, "FOOD_TYPE"]] }],
+    ["dinner\r", { "entities": [[0, 6, "FOOD_TYPE"]] }],
+    ["burger\r", { "entities": [[0, 6, "FOOD_TYPE"]] }],
+    ["lunch\r", { "entities": [[0, 5, "FOOD_TYPE"]] }],
+    ["samosa\r", { "entities": [[0, 6, "FOOD_TYPE"]] }],
+    ["tea\r", { "entities": [[0, 3, "FOOD_TYPE"]] }],
+    ["coffee\r", { "entities": [[0, 6, "FOOD_TYPE"]] }],
+    ["biriyani\r", { "entities": [[0, 8, "FOOD_TYPE"]] }],
+    ["ice cream\r", { "entities": [[0, 9, "FOOD_TYPE"]] }],
+    ["poori\r", { "entities": [[0, 5, "FOOD_TYPE"]] }],
+    ["pav bhaji\r", { "entities": [[0, 9, "FOOD_TYPE"]] }],
+    ["mousse\r", { "entities": [[0, 6, "FOOD_TYPE"]] }],
+    ["cupcake\r", { "entities": [[0, 7, "FOOD_TYPE"]] }],
+    ["cheesecake\r", { "entities": [[0, 10, "FOOD_TYPE"]] }],
+    ["cappuccino\r", { "entities": [[0, 10, "FOOD_TYPE"]] }],
+    ["pastries\r", { "entities": [[0, 8, "FOOD_TYPE"]] }],
+    ["donut\r", { "entities": [[0, 5, "FOOD_TYPE"]] }],
+    ["cake\r", { "entities": [[0, 4, "FOOD_TYPE"]] }],
+    ["shawarma\r", { "entities": [[0, 8, "FOOD_TYPE"]] }],
+    ["vada pav\r", { "entities": [[0, 8, "FOOD_TYPE"]] }],
+    ["cold drink\r", { "entities": [[0, 10, "FOOD_TYPE"]] }],
+    ["pepsi", { "entities": [[0, 5, "FOOD_TYPE"]] }]
+
+
+    
     ]  
   }
