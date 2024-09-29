@@ -43,59 +43,46 @@ db.to_disk("./train.spacy")
 # from spacy.tokens import DocBin
 # from tqdm import tqdm
 
-# # Load the spaCy model
-# nlp = spacy.load("en_core_web_lg")
+# # Load your spaCy model
+# nlp = spacy.load("en_core_web_trf")
 
-# # Load the training annotations from the JSON file
-# with open('annotations.json', 'r') as f:
-#     data = json.load(f)
+# # Function to process annotations
+# def process_annotations(file_path, output_path):
+#     # Load the annotations from the JSON file
+#     with open(file_path, 'r') as f:
+#         data = json.load(f)
 
-# # Initialize DocBin for storing processed documents
-# train_db = DocBin()
-# valid_db = DocBin()
+#     annotations = data["annotations"]
 
-# # Assuming your JSON structure has both training and validation annotations
-# annotations = data["annotations"]
-# valid_annotations = data.get("valid_annotations", [])  # Adjust according to your JSON structure
+#     # Initialize DocBin for storing processed documents
+#     db = DocBin()
 
-# # Process training annotations
-# for text, annot in tqdm(annotations):
-#     print(f"\nProcessing training text: {text}")
-#     doc = nlp.make_doc(text)
-#     ents = []
+#     # Iterate over each text and its corresponding annotations
+#     for text, annot in tqdm(annotations):
+#         print(f"\nProcessing text: {text}")
+#         doc = nlp.make_doc(text)
+#         ents = []
 
-#     for start, end, label in annot["entities"]:
-#         print(f"Entity: '{text[start:end]}' | Start: {start} | End: {end} | Label: {label}")
-#         span = doc.char_span(start, end, label=label, alignment_mode="contract")
+#         # Iterate over each entity in the annotation
+#         for start, end, label in annot["entities"]:
+#             print(f"Entity: '{text[start:end]}' | Start: {start} | End: {end} | Label: {label}")
+#             span = doc.char_span(start, end, label=label, alignment_mode="contract")
+            
+#             if span is None:
+#                 print(f"  Skipping entity: '{text[start:end]}' from position {start} to {end} with label '{label}'")
+#             else:
+#                 ents.append(span)
+        
+#         # Set the document's entities and add it to the DocBin
+#         doc.ents = ents
+#         db.add(doc)
 
-#         if span is None:
-#             print(f"  Skipping entity: '{text[start:end]}' from position {start} to {end} with label '{label}'")
-#         else:
-#             ents.append(span)
+#     # Save the processed data to disk
+#     db.to_disk(output_path)
 
-#     doc.ents = ents
-#     train_db.add(doc)
+# # Process training data
+# process_annotations('train_annotations.json', './train.spacy')
 
-# # Save the processed training data to disk
-# train_db.to_disk("./train.spacy")
+# # Process validation data
+# process_annotations('valid_annotations.json', './valid.spacy')
 
-# # Process validation annotations
-# for text, annot in tqdm(valid_annotations):
-#     print(f"\nProcessing validation text: {text}")
-#     doc = nlp.make_doc(text)
-#     ents = []
-
-#     for start, end, label in annot["entities"]:
-#         print(f"Entity: '{text[start:end]}' | Start: {start} | End: {end} | Label: {label}")
-#         span = doc.char_span(start, end, label=label, alignment_mode="contract")
-
-#         if span is None:
-#             print(f"  Skipping entity: '{text[start:end]}' from position {start} to {end} with label '{label}'")
-#         else:
-#             ents.append(span)
-
-#     doc.ents = ents
-#     valid_db.add(doc)
-
-# # Save the processed validation data to disk
-# valid_db.to_disk("./valid.spacy")
