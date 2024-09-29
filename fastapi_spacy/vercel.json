@@ -1,14 +1,14 @@
 {
   "builds": [
     {
-      "src": "fastapi_spacy/main.py",
+      "src": "api/main.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "fastapi_spacy/main.py"
+      "dest": "api/main.py"
     }
   ]
 }

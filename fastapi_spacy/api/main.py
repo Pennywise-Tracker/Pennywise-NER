@@ -27,7 +27,7 @@ greetings = {
 
 @app.get("/")
 async def read_root():
-    return {"message": "Pennywise-NER is running"}
+    return "Pennywise-NER is running!"
 
 @app.post("/predict")
 async def process_text(request: RequestModel):
